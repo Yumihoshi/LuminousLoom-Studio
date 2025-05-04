@@ -5,6 +5,12 @@
 		}
 	],
 	"settings": {
-		"twee3LanguageTools.storyformat.current": "sugarcube-2"
+		"twee3LanguageTools.storyformat.current": "sugarcube-2",
+		"files.exclude": {
+			"**/*.rpyc": true,
+			"**/*.rpa": true,
+			"**/*.rpymc": true,
+			"**/cache/": true
+		}
 	}
 }

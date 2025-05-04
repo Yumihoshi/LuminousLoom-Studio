@@ -1,0 +1,235 @@
+:: StoryTitle
+SugarCube教程模板
+
+
+:: StoryData
+{
+  "ifid": "A50EEE0A-6702-4CDF-83C9-9D12A83E1A0E",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "游戏封面"
+}
+
+:: StoryInit
+<<script>>
+Config.history.controls = true;
+Config.saves.slots = 16;
+<</script>>  // 启用侧边栏后退按钮，存档槽位设置（范围0-16）
+<<set $PangBaiCharacterName = "旁白">>
+<<set $YukiName1 = "陌生的少女">>
+<<set $YukiName2 = "星梦yuki">>
+<<set $PlayerName = "绘星tsuki（我）">>
+<<set $TypeMonsterName = "打字机精英怪">>
+<<cacheaudio "bgm" "../audio/bgm/Step by Step.m4a">>
+
+:: 游戏封面
+<<audio "bgm" volume 0.3 play loop>>
+<center>欢迎来到SugarCube的教程模板故事</center>
+
+作者：Yumihoshi
+
+在游戏之前，该如何称呼老师呢~
+
+[[开始游戏->引子0]]
+
+
+:: 引子0
+ $PlayerName：Player桑~欢迎来到Sugar Cube的教程模板，你需要收集尽可能多的Sugar Cube星光，来组成未来故事的星辰（！）
+
+ $PangBaiCharacterName：首先，让我们来学习如何[[插入图片->图片教程]]吧（wink~）
+
+
+:: 图片教程
+<img src="../img/SugarCube教程模板/shop.png" width="100%">
+ $YukiName1：这就是我哦~奶茶店的一名员工，叫我yuki就好，怎么样怎么样，很可爱吧>_<
+
+
+<img src="../img/SugarCube教程模板/shop.png" width="100px">
+ $YukiName2：也可以像这样用px指定图片长度。
+
+ $YukiName2：怎么样，是不是很简单呀？
+[[很简单->点击替换教程]]
+[[超级简单->点击替换教程]]
+[[根本没难度好吗->点击替换教程]]
+
+
+:: 延时显示教程
+ $YukiName2：嘻嘻~我在等你的回答哦。
+
+<<timed 1s>>
+3......
+<<timed 1s>>
+2......
+<<timed 1s>>
+1......
+<<timed 1s>>
+[[啊啊啊太羞耻了，可恶->文字样式教程]]
+<</timed>>
+<</timed>>
+<</timed>>
+<</timed>>
+
+
+:: 文字样式教程
+ $YukiName2：哈哈哈哈哈，你窘迫的样子好可爱啊，不逗你了哈哈哈哈。
+
+<<linkreplace "瘪嘴">>
+ $YukiName2：喏~给你带的<font color="#7E84F7"><b>闪电泡芙和奶茶。</b></font>
+	<<timed 1s>>
+ $YukiName2：什么？你问我为什么是紫色心情？
+		<<timed 1s>>
+ $YukiName2：唔......
+			<<timed 1s>>
+ $YukiName2：那当然是<font color="#7E84F7"><b>闪电泡芙和奶茶啦（！）</b></font>
+[[无奈扶额->文字样式教程2]]
+            <</timed>>
+		<</timed>>
+	<</timed>>
+<</linkreplace>>
+
+
+:: 文字样式教程2
+（yuki带上了小眼镜）
+
+ $YukiName2：<font color="#75FA61">咳咳，想要给字体换个心情，就试试font标签吧。</font>
+<<linkreplace "继续">>
+	 $YukiName2：<b>如果想要加粗，就用b标签。</b>
+    <<linkreplace "继续">>
+    	 $YukiName2：<i>至于斜体的话，那当然得是可爱的i标签哦。</i>
+      [[下一页->打字机教程]]
+    <</linkreplace>>
+<</linkreplace>>
+
+
+
+:: 点击替换教程
+ $YukiName2：那么接下来，就是……
+
+<<linkreplace "继续">>
+......
+<<linkreplace "继续">>
+...
+<<linkreplace "继续">>
+ $YukiName2：神奇的替换效果（！）
+
+[[下一页->点击替换教程2]]
+<</linkreplace>>
+<</linkreplace>>
+<</linkreplace>>
+
+
+:: 点击替换教程2
+ $YukiName2：在linkreplace宏中，右边引起来的就是提示文字，宏包裹的就是点击后显示出来的文字。
+
+<<linkreplace "原来如此">>
+ $YukiName2：那么，是时候来个道德困境了（！）
+<<linkreplace "嗯？">>
+ $YukiName2：说（！）你是不是最喜欢我了。
+[[诶诶诶？！->延时显示教程]]
+<</linkreplace>>
+<</linkreplace>>
+
+:: 打字机教程
+（背后传来一阵脚步声）
+<<timed 1s>>
+  （哒......）
+  <<timed 1s>>
+    （哒哒哒......）
+    <<timed 1s>>
+       $PlayerName：小心！（我一把拉住yuki跳向另一侧）
+      <<linkreplace "继续">>
+         $YukiName2：居然是$TypeMonsterName，啊啊啊要被拉入领域了。
+        [[下一页->打字机教程精英怪领域]]
+      <</linkreplace>>
+    <</timed>>
+  <</timed>>
+<</timed>>
+
+:: 打字机教程精英怪领域
+<<type 60ms >>
+   $TypeMonsterName：啊哈哈，我就是大名鼎鼎的打字机精英怪。
+  <<linkreplace "继续">>
+    <<type 60ms >>
+       $TypeMonsterName：多少人，无论是Unity, Godot还是Unreal，都曾拜倒在我的脚下。
+      [[下一页->居中和标题]]
+    <</type>>
+  <</linkreplace>>
+<</type>>
+
+:: 居中和标题
+$PlayerName：少废话，看招。
+<<linkreplace "使用超级无敌系统代码">>
+  $TypeMonsterName：啊啊啊啊！
+  <<type 60ms >>
+    $PangBaiCharacterName：随着最后一片碎片的消失，你得到了时光棱镜。
+    [[仔细观察->居中和标题1]]
+    [[询问yuki->居中和标题2]]
+  <</type>>
+<</linkreplace>>
+
+:: 居中和标题1
+<<type 60ms >>
+  透过璀璨星光，时光棱镜里呈现出类似某人的记忆。
+  [[问问yuki吧->居中和标题2]]
+<</type>>
+
+:: 居中和标题2
+<<type 60ms >>
+  $YukiName2：唔，之前在奶茶店的老板那里听说过一个故事。
+  $YukiName2：凡是获得时光棱镜之人，都要担负起很重要的责任。
+  $YukiName2：那就是……
+  <<linkreplace "继续">>
+    见证重要之人的过去
+    [[下一页->居中和标题3]]
+  <</linkreplace>>
+<</type>>
+
+:: 居中和标题3
+<<type 60ms >>
+  $YukiName2：但在那之前，你得先学会居中和标题，也很简单啦，就像这样。
+  <center>这是居中</center>
+  <h1>这是H1标题</h1>
+  [[下一页->禁止侧边栏回退]]
+<</type>>
+
+:: 禁止侧边栏回退
+<<type 60ms >>
+  $YukiName2：呜呜呜，好想和你一起去，在时光棱镜里一定不要被悲伤吞没。
+  <<linkreplace "继续">>
+    <<type 60ms>>
+    $YukiName2：另外，在进入时光棱镜后（抚摸着我的手）答应我，要记得樱花树下的约定
+    [[下一页->临时变量]]
+    <</type>>
+  <</linkreplace>>
+<</type>>
+
+:: 临时变量
+<<type 60ms >>
+  $PangBaiCharacterName：至于变量的使用，全局变量用$，临时变量用_开头，相信你已经很熟悉了
+  那么...
+  我们来点不一样的
+  [[下一页->随机数与概率]]
+<</type>>
+
+:: 随机数与概率 [nobr]
+没错，就是随机数与概率！
+<<set _i to random(1, 10)>>
+<br>
+刚刚孕育的随机数i就是_i，random的参数是闭区间哦（不是左闭右开）
+[[下一页->禁止自动换行]]
+
+:: 禁止自动换行 [nobr]
+在各种宏使用多了，代码格式上的换行会导致文本换行，<br>
+推荐在片段名后加nobr标签，使用br标签手动换行
+[[离开时光棱镜->结局1]]
+
+:: 结局1 [nobr]
+<<type 60ms>>$YukiName2：至此，Twine的常用功能你已经掌握啦，遗失辉星的时候记得常回来看看~
+
+<br>
+
+<center><h3>游戏结束</h3></center><</type>>
+<br>
+<<timed 4s>>
+  <img src="../img/SugarCube教程模板/shop.png" width="100%">
+<</timed>>

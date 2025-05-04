@@ -1,0 +1,7 @@
+1. 在src下新建twee空文件
+2. 写::StoryTitle故事标题，::StoryData（要用代码自动生成，因为有ifid标识符）
+（可参考其他twee文件）
+
+3. 如何编译为html?
+按下ctrl + shift + b，打开在dist下的html，右键open in browser
+另外编译会检测文件更改自动编译，若遇到不可逆的错误，请重新编译
