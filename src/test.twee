@@ -1,0 +1,18 @@
+:: StoryTitle
+测试故事
+
+
+:: StoryData
+{
+  "ifid": "7A0F7E64-6F4D-42BB-8204-F640087A9C65",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "测试故事"
+}
+
+:: 测试故事
+这是第一行诶
+[[下一页->下一个故事]]
+
+:: 下一个故事
+第二个故事哦
