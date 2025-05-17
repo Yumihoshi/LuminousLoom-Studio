@@ -1,0 +1,19 @@
+:: StoryTitle
+《给游协新生的一款游戏》
+
+:: StoryData
+{
+    "ifid": "52F71629-AB28-4423-AC5A-BA6ACED81791",
+    "format": "SugarCube",
+    "format-version": "2.37.3",
+    "start": "游戏封面"
+}
+
+:: StoryInit
+<<script>>Config.saves.slots = 16;<</script>>
+
+
+:: 游戏封面
+<h1><center>《给游协新生的一款游戏》</center></h1>
+
+作者：绘星tsuki

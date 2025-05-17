@@ -1,0 +1,131 @@
+:: StoryTitle
+《糖心守护者》剧本
+
+:: StoryData
+{
+    "ifid": "9263A712-9192-4E9B-B23D-62E9EC35CF8D",
+    "format": "SugarCube",
+    "format-version": "2.37.3",
+    "start": "游戏封面"
+}
+
+:: StoryInit
+<<script>>Config.saves.slots = 16;<</script>>
+<<set $XingKongSuoZhangName = "星空所长·艾斯特拉">>
+<<set $PlayerName = "糖果屋守护者·玩家">>
+<<set $PuTaoQiShiName = "葡萄骑士·维蒂娅">>
+<<set $SuTangTouShouName = "酥糖投手·芬雅">>
+<<set $LongXuYuanZhangName = "龙须院长·酥雪">>
+<<set $MuSiShengNvName = "慕斯圣女·鲜花饼">>
+<<set $BoHeLianYinName = "薄荷铃音·清涟">>
+<<set $PangBaiName = "旁白">>
+
+:: 游戏封面
+<h1><center>《糖心守护者》游戏剧本</center></h1>
+
+作者：策划-实名上网
+誊抄：绘星tsuki
+
+[[开始游戏（模拟点击新游戏按钮后）（第一章第一关引导）->第一章第一关]]
+
+:: 第一章第一关
+当前位置：第一章第一关引导
+
+$XingKongSuoZhangName：殿下，欢迎来到糖果屋，且容我为您介绍糖果屋的配置，我们有强大的情报网，可以在敌人到来之前提前知晓敌人信息和进攻方向，不过需要您支付一定的资金。
+<<linkreplace "继续">>
+    $XingKongSuoZhangName：我们的工厂可以生产强大的组件供防卫者使用，同时工厂里也同样可以生产防卫者的魔法分身，我们的防卫者不必亲自上阵，只需要提供一定的力量就能允许工厂为她们制作魔法分身。
+    <<linkreplace "继续">>
+        $XingKongSuoZhangName：在我们战斗时，城堡里的人们会对我们的战斗进行下注，您也可以通过下注自己来赢取更多的蜜语币，点击赌约就能参与下注。
+        [[下一页->第一章第一关2]]
+    <</linkreplace>>
+<</linkreplace>>
+
+:: 第一章第一关2
+当前位置：第一章第一关引导
+
+$XingKongSuoZhangName：如果你解锁了新的组件或是打败了新的敌人，您都可以在图鉴内查看，以方便您更好的部署。
+<<linkreplace "继续">>
+    $XingKongSuoZhangName：您可以在地图上任何没有障碍的地方部署防卫者，我们的防卫者有不同擅长的方向，您需要根据她们的特长来进行部署，同时您也可以在战斗中支付一定的蜜语币使用城堡的强力后援技能，如果在合适的时机使用或许可以化险为夷；无论您采用何种方法都不能让敌人攻入城堡，城堡可以抵御一定的敌人但数量有限，如果城堡沦陷我们的世界将陷入万劫不复之境，愿上苍保佑我们。
+    [[下一页（正文）->第一章第一关正文]]
+<</linkreplace>>
+
+
+:: 第一章第一关正文
+当前位置：第一章第一关引导正文
+
+$PuTaoQiShiName：殿下，前方传来情报，有一队人马从东方来袭，应该是敌人的先遣部队，请殿下部署防御。
+<<linkreplace "继续">>
+    $XingKongSuoZhangName：正好，敌人来袭，让他们见识一下我们的厉害。
+    <<linkreplace "继续">>
+        $SuTangTouShouName：上吧，殿下，我愿成为您的先锋，把他们打的落花流水。
+        <<linkreplace "继续">>
+            $LongXuYuanZhangName：镇定，芬雅，我们有魔法分身，不需要亲自出战，我们要做的是防御城堡内部。
+            <<linkreplace "继续">>
+                $MuSiShengNvName：上吧殿下，这是您的第一战，是时候给这些家伙一个下马威了。
+                [[第一关战斗胜利，进入第二关->第一章第二关]]
+            <</linkreplace>>
+        <</linkreplace>>
+    <</linkreplace>>
+<</linkreplace>>
+
+:: 第一章第二关
+当前位置：第一章第二关
+
+$PangBaiName：「会议室内」
+$PangBaiName：战术板上指向防御部署地区的绿色箭头被谁人用红色重新勾画，全部指向一个中心——糖果屋
+
+$XingKongSuoZhangName：目的很明确啊……诸位，重新调整战术。
+<<linkreplace "继续">>
+    $MuSiShengNvName：根据敌人行进路线，可以推测出敌人的目标是糖果屋内部
+    <<linkreplace "继续">>
+        $LongXuYuanZhangName：一旦失败糖果屋就会彻底沦陷。
+        <<linkreplace "继续">>
+            $SuTangTouShouName：我不会让这种事情发生的。殿下，请让我发挥自己的力量吧。
+            <<linkreplace "继续">>
+$XingKongSuoZhangName：诸位，请冷静下来。
+<<linkreplace "继续">>
+$XingKongSuoZhangName：我们不能失败，维蒂娅骑士在前线为我们争取来的片刻时间无论如何都不能被浪费。
+<<linkreplace "继续">>
+$PuTaoQiShiName：前线作战紧急，请求支援。
+<<linkreplace "继续">>
+$XingKongSuoZhangName：没时间犹豫了，殿下，请做出决策吧。
+<<linkreplace "继续">>
+$PlayerName：我们必须出击
+[[第二关战斗胜利，进入第三关->第一章第三关]]
+        <</linkreplace>>
+        <</linkreplace>>
+        <</linkreplace>>
+        <</linkreplace>>
+        <</linkreplace>>
+        <</linkreplace>>
+    <</linkreplace>>
+<</linkreplace>>
+
+:: 第一章第三关
+当前位置：第一章第三关
+
+$PuTaoQiShiName：报告！三号防御工事出现坍缩现象！
+<<linkreplace "继续">>
+    $PuTaoQiShiName：它们突破了！防御——！！！！！！！！！
+    <<linkreplace "继续">>
+        $PangBaiName：通讯戛然而止。
+        <<linkreplace "继续">>
+            $LongXuYuanZhangName：敌人的行动轨迹全部指向糖心，战斗在所难免。
+            <<linkreplace "继续">>
+                $MuSiShengNvName：殿下，请不要犹豫，我们一直与您同在。
+                <<linkreplace "继续">>
+                    $SuTangTouShouName：我不会让它们毁掉这个世界
+                    <<linkreplace "继续">>
+                        $XingKongSuoZhangName：诸位，打起精神，我们一定会胜利的。
+                        <<linkreplace "继续">>
+                            $PlayerName：说得对，让我们去把他们打的落花流水！
+                            进入第三关战斗......
+                            <h5><center>剧本结束</center></h5>
+                        <</linkreplace>>
+                    <</linkreplace>>
+                <</linkreplace>>
+            <</linkreplace>>
+        <</linkreplace>>
+    <</linkreplace>>
+<</linkreplace>>
+
