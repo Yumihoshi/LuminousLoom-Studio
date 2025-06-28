@@ -1,0 +1,146 @@
+:: StoryTitle
+CGJ2025视觉小说
+
+:: StoryData
+{
+    "ifid": "D6C41122-776B-445F-8127-8D207529BAEA",
+    "format": "SugarCube",
+    "format-version": "2.37.3",
+    "start": "封面"
+}
+
+:: StoryInit
+<<script>>
+Config.history.controls = true; // 启用侧边栏后退按钮
+Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
+<</script>>
+<<set $PlayerName = "念时">>
+<<set $ColleagueAName = "同事A">>
+<<set $XWorldName = "X世界">>
+<<set $YouYouQiuName = "赤焰流星">>
+
+
+
+:: 封面 [nobr]
+<h1><center>CGJ2025视觉小说</center></h1><br>
+
+队伍：谁才是佬大！<br>
+文案：绘星<br>
+美术：66！！！<br>
+小全：慕辽<br>
+吉祥物：SKewer<br>
+<br>
+[[开始游戏->序言]]
+
+
+
+:: 序言 [nobr 序章：念时的日常]
+【背景音：电梯运行声】<br>
+【画面：电梯内图】<br>
+
+<center><img src="https://i.ibb.co/TDmskJnv/image.png" width="50%"></center>
+
+<<type 30ms>>
+“8:15，电梯第23层，会议、客户、笑容、话术、数据……还有，那句话。”
+<</type>><br>
+
+<<type 30ms>>
+（门开了）
+<</type>><br>
+
+<<type 30ms>>
+<strong>$ColleagueAName</strong>（嚼着口香糖）：“哟，念哥，这表也太有年代感了吧？儿童款？”
+<</type>><br>
+
+<<type 30ms>>
+（甩来一份报表，纸页刮过<strong>$PlayerName</strong>的嘴角。）
+<</type>><br>
+
+<<type 30ms>>
+“你做的‘树屋积木’宣传根本不对路！客户要的是‘省心’，你给人整了个‘童年梦想’。”
+<</type>><br>
+
+<<type 30ms>>
+（指尖戳手表树屋投影表盘）
+<</type>><br>
+
+<<type 30ms>>
+“搞情怀这套？醒醒吧，现在是商业社会。”
+<</type>><br>
+
+<<type 200ms>>
+”幼——不——[[幼稚->强颜欢笑]]啊~”
+<</type>><br>
+
+
+
+:: 强颜欢笑 [nobr 序章：念时的日常]
+<<type 30ms>>
+    我（勉强笑）：“……成年人嘛，要现实点。”<br>
+    <br>
+    <<linkreplace "转身">>
+        <<type 40ms>>（幼稚……呵。）<br>
+            <br>
+            [[下班回到家中->家中]]
+        <</type>>
+    <</linkreplace>>
+<</type>>
+
+
+
+:: 家中 [nobr 序章：念时的日常]
+【音效：键盘敲击声】<br>
+<<type 30ms>>
+墙上的日历或许有好几年没翻过了吧，过去对我来说不重要，也没有必要。
+<</type>><br>
+
+<<type 30ms>>
+我只需要完成每天的工作，一切按部就班就好。 
+<</type>><br>
+
+<<type 30ms>>
+我：“最后一件待办事项，完成。”
+<</type>><br>
+
+<<type 30ms>>
+”呼~“<br><br>
+[[伸个懒腰->Boss催促]]
+<</type>><br>
+
+
+
+:: Boss催促 [nobr 序章：念时的日常]
+【音效：手机电话铃声】<br>
+<br>
+<<linkreplace "电话响了">>
+    <<type 30ms>>
+        “小念啊！”<br>
+        <br>
+        （电话另一端炸开<strong>老板</strong>带着烟酒味的笑声）<br>
+        <br>
+        “刚刚看你把‘树屋积木’方案删得干干净净，我就知道你终于懂事了！”<br>
+        <br>
+        “我还记得，你刚入职时，写得那份‘梦想玩具’提案……哈哈，现在知道不切实际了吧？”<br>
+        <br>
+        [[开启省电模式->省电]]
+    <</type>>
+<</linkreplace>>
+
+
+
+:: 省电 [nobr 序章：念时的日常]
+<<type 30ms>>
+<<linkreplace "......">>
+        ......<br>
+        <<linkreplace "...">>
+            ...<br>
+            <br>
+            <<type 30ms>>
+            同样的内容，每天都在重复，就像货架上堆叠的玩具包装盒，按固定序列开合封箱，连胶带撕拉的锯齿都一模一样。<br><br>
+            待办事项真正的最后一项——听老板的深夜感慨。<br><br>
+            哎——<br><br>
+            先[[打扫屋子->来信]]吧。
+            <</type>>
+        <</linkreplace>>
+<</linkreplace>>
+<</type>>

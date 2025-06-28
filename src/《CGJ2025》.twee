@@ -1,0 +1,395 @@
+:: StoryTitle
+CGJ2025视觉小说
+
+:: StoryData
+{
+    "ifid": "D6C41122-776B-445F-8127-8D207529BAEA",
+    "format": "SugarCube",
+    "format-version": "2.37.3",
+    "start": "封面"
+}
+
+:: StoryInit
+<<script>>
+Config.history.controls = true; // 启用侧边栏后退按钮
+Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
+<</script>>
+<<set $PlayerName = "念时">>
+<<set $ColleagueAName = "同事A">>
+<<set $XWorldName = "X世界">>
+<<set $YouYouQiuName = "赤焰流星">>
+
+
+
+:: 封面 [nobr]
+<h1><center>CGJ2025视觉小说</center></h1><br>
+
+队伍：谁才是佬大！<br>
+文案：绘星<br>
+美术：66！！！<br>
+小全：慕辽<br>
+吉祥物：SKewer<br>
+<br>
+[[开始游戏->序言]]
+
+
+
+:: 序言 [nobr 序章：念时的日常]
+【背景音：电梯运行声】<br>
+【画面：电梯内图】<br>
+
+<center><img src="https://i.ibb.co/TDmskJnv/image.png" width="50%"></center>
+
+<<type 30ms>>
+“8:15，电梯第23层，会议、客户、笑容、话术、数据……还有，那句话。”
+<</type>><br>
+
+<<type 30ms>>
+（门开了）
+<</type>><br>
+
+<<type 30ms>>
+<strong>$ColleagueAName</strong>（嚼着口香糖）：“哟，念哥，这表也太有年代感了吧？儿童款？”
+<</type>><br>
+
+<<type 30ms>>
+（甩来一份报表，纸页刮过<strong>$PlayerName</strong>的嘴角。）
+<</type>><br>
+
+<<type 30ms>>
+“上周你做的宣传方案根本不对路！客户要的是“省心”，你给人整了个“童年梦想””
+<</type>><br>
+
+<<type 30ms>>
+（指尖戳手表树屋投影表盘）
+<</type>><br>
+
+<<type 30ms>>
+“搞情怀那套？醒醒吧，现在是商业社会。“
+<</type>><br>
+
+<<type 200ms>>
+”幼——不——[[幼稚->强颜欢笑]]啊~”
+<</type>><br>
+
+
+
+:: 强颜欢笑 [nobr 序章：念时的日常]
+<<type 30ms>>
+    我（勉强笑）：“……成年人嘛，要现实点。”<br>
+    <br>
+    <<linkreplace "转身">>
+        <<type 40ms>>（幼稚……呵。）<br>
+            <br>
+            [[下班回到家中->家中]]
+        <</type>>
+    <</linkreplace>>
+<</type>>
+
+
+
+:: 家中 [nobr 序章：念时的日常]
+【音效：键盘敲击声】<br>
+<<type 30ms>>
+墙上的日历或许有好几年没翻过了吧，过去对我来说不重要，也没有必要。
+<</type>><br>
+
+<<type 30ms>>
+我只需要完成每天的工作，一切按部就班就好。 
+<</type>><br>
+
+<<type 30ms>>
+我：“最后一件待办事项，完成。”
+<</type>><br>
+
+<<type 30ms>>
+”呼~“<br><br>
+[[伸个懒腰->Boss催促]]
+<</type>><br>
+
+
+
+:: Boss催促 [nobr 序章：念时的日常]
+【音效：手机电话铃声】<br>
+<br>
+<<linkreplace "电话响了">>
+    <<type 30ms>>
+        “小念啊！”<br>
+        <br>
+        （电话另一端炸开<strong>老板</strong>带着烟酒味的笑声）<br>
+        <br>
+        “刚刚看你把‘树屋积木’方案删得干干净净，我就知道你终于懂事了！”<br>
+        <br>
+        “我还记得，你刚毕业那会，可有干劲了......”<br>
+        <br>
+        [[开启省电模式->省电]]
+    <</type>>
+<</linkreplace>>
+
+
+
+:: 省电 [nobr 序章：念时的日常]
+<<type 30ms>>
+<<linkreplace "......">>
+        ......<br>
+        <<linkreplace "...">>
+            ...<br>
+            <br>
+            <<type 30ms>>
+            同样的内容，每天都在重复，就像货架上堆叠的玩具包装盒，按固定序列开合封箱，连胶带撕拉的锯齿都一模一样。<br><br>
+            待办事项真正的最后一项——听老板的深夜感慨。<br><br>
+            哎——<br><br>
+            先[[打扫屋子->来信]]吧。
+            <</type>>
+        <</linkreplace>>
+<</linkreplace>>
+<</type>>
+
+
+
+:: 来信 [nobr 序章：念时的日常]
+【音效：敲门声】<br><br>
+
+<<type 30ms>>
+    我：“谁啊？”<br>
+    <<linkreplace ".........">>
+        .........<br>
+        <br>
+        <<linkreplace "......">>
+            ......<br>
+            <br>
+            <<linkreplace "...">>
+                ...<br>
+                <br>
+                （无人[[回应->拾起信件]]）<br>
+            <</linkreplace>>
+        <</linkreplace>>
+    <</linkreplace>>
+<</type>>
+
+
+
+:: 拾起信件 [nobr 序章：念时的日常]
+【画面：家门口信件图】
+【音效：纸张摩擦声】<br><br>
+
+<<type 30ms>>
+我：（……这谁啊，大半夜来送信？）<br><br>
+我打开门，发现地上有封信。<br><br>
+纸封泛黄，边角磨损，像是从遥远旧时光爬出来的老物件。<br><br>
+
+落款处只写了五个歪歪扭扭的字：“//给未来的我//”<br><br>
+
+<<linkreplace "打开信封">>
+[[打开信封->信的内容]]
+<</linkreplace>>
+<</type>>
+
+
+
+:: 信的内容 [nobr 序章：念时的日常]
+
+<<type 40ms>>
+给二十年后的我：<br><br>
+
+你现在是不是已经变成“大人”啦？会不会也开始喜欢喝咖啡、穿西装、说一些听不懂但很厉害的话？<br><br>
+
+你还记得 $XWorldName 吗？你说要盖到月亮上去，还说将来要做玩具店的老大，让所有小朋友都能开心！<br><br>
+
+如果你忘了，就回来找我吧。<br><br>
+我在“$XWorldName”等你。<br><br>
+
+一定要来喔。^_^<br><br>
+
+—— 10岁的$PlayerName<br><br>
+    <<linkreplace "......">>
+        ......<br>
+        [[轻声读出“X世界”三个字->动摇]]
+    <</linkreplace>>
+<</type>>
+
+
+
+:: 动摇 [nobr 序章：念时的日常]
+<<type 30ms>>
+“X世界……”<br><br>
+
+一个久远到几乎模糊的词语，像是童年某次游戏时不小心念出口的魔咒。<br><br>
+
+脑海深处有光闪过——感觉是很重要的东西，但仿佛有无形的力量在阻止我回忆。<br><br>
+
+是......什么呢？<br><br>
+
+[[翻看信件背面->提示1]]
+<</type>>
+
+
+
+:: 提示1 [nobr 序章：念时的日常]
+【画面：和$YouYouQiuName邂逅的摊贩照片】<br><br>
+
+
+<<type 30ms>>
+    一个街边小摊，似曾相识的悠悠球......<br><br>
+    一旁写着：“<strong>//和死党，永远的$XWorldName！//</strong>”<br><br>
+    $XWorldName，会是是这个小摊吗？<br><br>
+    等等！！<br><br>
+    一瞬间，记忆如决堤洪水，汹涌袭来。我认得它，它叫：<br><br>
+    [[天煞！->寻找悠悠球][$YouYouQiuName = "天煞"]]<br>
+    [[天马流星！->寻找悠悠球][$YouYouQiuName = "天马流星"]]<br>
+    [[赤焰流星！->寻找悠悠球][$YouYouQiuName = "赤焰流星"]]<br>
+    [[暴风超音！->寻找悠悠球][$YouYouQiuName = "暴风超音"]]<br>
+<</type>>
+
+
+
+:: 寻找悠悠球 [nobr 序章：念时的日常]
+<<type 30ms>>
+    这个摊子，我记得应该就在这家店附近。<br><br>
+    <<linkreplace "打开手机地图">>
+        打开手机地图<br><br>
+        <<type 30ms>>
+            找到了，就是[[这里->咖啡馆]]。
+        <</type>>
+    <</linkreplace>>
+<</type>>
+
+:: 咖啡馆 [nobr 第一章：悠悠球的觉醒]
+<<type 30ms>>
+    （第二天）<br>
+    “今日阴天，体感微凉，温度：24℃，朝星区午后局部地区有雨，明晚至后天将迎暴雨，周三概率达70%”<br><br>
+    我：（看来过几天雨不小啊，得在待办事项上加一条：收衣服）<br><br>
+    “向阳路，到了，请出站的乘客下车......”<br><br>
+    <<linkreplace "收起便签，离开地铁">>
+        收起便签，离开地铁<br><br>
+    <<type 30ms>>（应该就是这家咖啡店了）<br><br>
+    店员：“欢迎光临，先生想喝点什么？”<br><br>
+    我：来杯<br><br>
+    [[美式->甜点线索][$Coffee = "美式"]]<br>
+    [[生椰拿铁->甜点线索][$Coffee = "生椰拿铁"]]<br>
+    [[燕麦拿铁->甜点线索][$Coffee = "燕麦拿铁"]]<br>
+    [[轻轻茉莉->甜点线索][$Coffee = "轻轻茉莉"]]<br>
+    <</type>>
+    <</linkreplace>>
+<</type>>
+
+:: 甜点线索 [nobr 第一章：悠悠球的觉醒]
+<<type 30ms>>
+    店员：”好的，先生稍等。“<br><br>
+    <<linkreplace "询问摊贩的位置">>
+        询问摊贩的位置<br><br>
+        <<type 30ms>>
+        （店员指尖无意识地蜷缩了一下）<br><br>
+        店员（避开视线）：”...不好意思先生，我从来没听说过这个地方。“<br><br>
+        （她转身制作咖啡时，袖口掠过柜台，像抹去尘埃般扫过台面）<br><br>
+        店员：”您的$Coffee，还有——。“<br><br>
+        （白瓷盘轻叩桌面）<br>
+        “今日份试吃新品「杏仁豆腐」~”<br><br>
+        <<linkreplace "打开手机再次确认摊贩位置">>
+            甜点碟底压着三角形纸尖，糖霜正缓慢濡湿纸角<br><br>
+                <<linkreplace "抽出纸条">>
+                    （泛黄纸页带着咖啡渍，折痕深得像童年作业本的褶皱）<br><br>
+                    <<type 30ms>>「钟楼背面的自动贩售机<br>
+                    投币口卡着<<print $YouYouQiuName>>的残骸——<br>
+                    19:00前取走，过时不候」<br><br>
+                    （背面画着歪扭的太阳笑脸，和童年信件落款的笔迹[[相同->邂逅悠悠球]]）<br>
+                    <</type>>
+                <</linkreplace>>
+        <</linkreplace>>
+        <</type>>
+    <</linkreplace>>
+<</type>>
+
+
+
+:: 邂逅悠悠球 [nobr 第一章：悠悠球的觉醒]
+<<type 30ms>>
+    找到了！<br><br>
+    我：“好久不见，<<print $YouYouQiuName>>。“<br><br>
+    [[触碰悠悠球->悠悠球回忆]]
+<</type>>
+
+
+
+:: 悠悠球回忆 [nobr 第一章：悠悠球的觉醒]
+【画面：摊位购买悠悠球】
+
+<<type 30ms>>
+    我望着手中的<<print $YouYouQiuName>>，记忆如热浪回涌，不知为何，眼角竟有些湿润。<br><br>
+    7岁那年，我用攒了三个月的零花钱，在小摊上买下了他——<<print $YouYouQiuName>>。<br><br>
+    刚拆封，那颗通体燃红的悠悠球竟猛地挣脱手掌，在空中火花四溅地旋转炸响。<br><br>
+    <<type 40ms>>
+    “就你也配碰我？”<br><br>
+    它带着火气的声音，像个桀骜不驯的少年。<br><br>
+    我吓了一跳，慌忙去抓——它却再次挣脱，在地上狂转不休。<br><br>
+    那段日子里，每一次练习都像挑战极限：指尖被抽得通红，动作稍慢就被它无情甩飞。<br><br>
+    “手这么慢还想打比赛？不如回家堆积木去！”<br><br>
+    可我没有放弃。<br><br>
+    白天在教室默背招式图谱，傍晚偷偷在街角路灯下苦练「烈焰回旋」、「天火千绳」……<br><br>
+    手指磨出了厚茧，袖口被磨线划出一道道毛边。<br><br>
+    [[终于——->现实中的悠悠球]]<br><br>
+    <</type>>
+<</type>>
+
+
+
+:: 现实中的悠悠球 [nobr 第一章：悠悠球的觉醒]
+<<type 30ms>>
+    <<print $YouYouQiuName>>：“你发什么愣呢？别搞得像久别重逢的恋人。”<br><br>
+    我：“谁？是谁在说话？“<br>
+    （我连忙纂紧<<print $YouYouQiuName>>，生怕这来之不易的重逢溜走）
+    <<print $YouYouQiuName>>：“疼疼疼，快[[松手->悠悠球刻字]]，你抓到刻字了！！！”
+<</type>>
+
+
+
+:: 悠悠球刻字 [nobr 第一章：悠悠球的觉醒]
+<<type 30ms>>
+    <<print $YouYouQiuName>>：“要不是你用圆规乱折腾......”<br><br>
+    “不过也罢，咱俩的羁绊......也不止于此。”<br><br>
+    我愣了一下，又突然笑出声来：<br><br>
+    “你真是一点也[[没变->悠悠球线断]]。”
+<</type>>
+
+
+
+:: 悠悠球线断 [nobr 第一章：悠悠球的觉醒]
+
+<center><img src="https://i.ibb.co/q4Kd876/image.png" width="50%"></center>
+
+<<type 30ms>>
+    <<print $YouYouQiuName>>：“得了吧，当初要不是看你这么坚持，还用红领巾修好我的系绳的份上，我也不会成为教练队长。”<br><br>
+
+    而那时我也终于明白：<br><br>
+
+    我和<<print $YouYouQiuName>>异口同声：<br><br>“//悠悠球，从来不只是技巧的比赛。//”<br><br>
+    “//绳子的另一端，连接着的，是
+    <<linkreplace "默契与羁绊">>
+        默契与羁绊//”。
+        <<type 30ms>>
+            $YouYouQiuName：“你这家伙......”<br><br>
+            我们[[大笑->悠悠球审问]]起来。<br><br>
+        <</type>>
+    <</linkreplace>><br><br>
+<</type>>
+
+
+
+:: 悠悠球审问 [nobr 第一章：悠悠球的觉醒]
+<<type 30ms>>
+乘坐几个小时的地铁，现在已是夜晚，窗外是漆黑的梦，载着我虚无缥缈的过去。<br><br>
+<<print $YouYouQiuName>>：“现在的你，还耍得动「天火千绳」”吗？<br><br>
+<<linkreplace "尝试「天火千绳」">>
+    我：“「天火千绳」——落！”<br><br>
+    <<print $YouYouQiuName>>：“太慢，你上次还能连三段！”<br><br>
+    <<print $YouYouQiuName>>：“气势连上次的一半都没有！”<br><br>
+    我：“......老子现在可是上班族了啊！”<br><br>
+    可我依然一遍又一遍地挥舞，汗水打湿额角，指节隐隐作痛，<br>
+    但心跳却像久违地活了过来。<br><br>
+
+    <<print $YouYouQiuName>>低声道：“你心里，还留着那个<<print $XWorldName>>。”<br><br>
+    我沉默。
+    <<print $YouYouQiuName>>：“”
+<</linkreplace>>
+
+<</type>>

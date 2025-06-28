@@ -6,7 +6,7 @@
     "ifid": "46C172DF-083A-4370-8B6A-ADEF4D41D213",
     "format": "SugarCube",
     "format-version": "2.37.3",
-    "start": "游戏封面"
+    "start": "封面"
 }
 
 :: StoryInit
@@ -15,10 +15,15 @@ Config.history.controls = true; // 启用侧边栏后退按钮
 Config.saves.slots = 16;        // 存档槽位设置（范围0-16）
 <</script>>
 
-:: 游戏封面 [nobr]
-<h1><center>《剧本标题》</center></h1><br>
+<<set $Characters = {
+    "Author": { Age: 19, Name: "绘星tsuki" },
+    "Friend": { Age: 20, Name: "Friend" }
+}>>
 
-作者：绘星tsuki<br><br>
+:: 封面 [nobr]
+<h1><center>剧本标题</center></h1><br>
+
+作者：$Characters.Author.Name<br><br>
 
 [[设定]]<br>
 [[开始游戏]]
