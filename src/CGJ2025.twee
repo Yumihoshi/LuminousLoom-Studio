@@ -1,5 +1,5 @@
 :: StoryTitle
-CGJ2025视觉小说
+X世界遗址：重启计划
 
 :: StoryData
 {
@@ -18,16 +18,20 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 <<set $ColleagueAName = "同事A">>
 <<set $XWorldName = "X世界">>
 <<set $YouYouQiuName = "赤焰流星">>
-<<cacheaudio "DianTi" "./audio/sfx/电梯.mp3">>
-<<cacheaudio "Keyboard" "./audio/sfx/键盘敲击.mp3">>
-<<cacheaudio "Phone" "./audio/sfx/来点.mp3">>
-<<cacheaudio "Door" "./audio/sfx/敲门.mp3">>
-<<cacheaudio "StartBgm" "./audio/bgm/开头.mp3">>
+<<cacheaudio "DianTi" "./audio/sfx/DianTi.mp3">>
+<<cacheaudio "Keyboard" "./audio/sfx/Keyboard.mp3">>
+<<cacheaudio "Phone" "./audio/sfx/Phone.mp3">>
+<<cacheaudio "Door" "./audio/sfx/Door.mp3">>
+<<cacheaudio "StartBgm" "./audio/bgm/start.mp3">>
+<<cacheaudio "BEBgm" "./audio/bgm/bd.mp3">>
+<<cacheaudio "HEBgm" "./audio/bgm/gd.mp3">>
+<<cacheaudio "Seek" "./audio/bgm/seek.mp3">>
+<<cacheaudio "Cur" "./audio/bgm/cur.mp3">>
 
 
 
 :: 封面 [nobr]
-<h1><center>CGJ2025视觉小说</center></h1><br>
+<h1><center>《X世界遗址：重启计划》</center></h1><br>
 
 队伍：谁才是佬大！<br>
 文案：绘星<br>
@@ -42,7 +46,7 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 :: 序言 [nobr 序章：念时的日常]
 <<audio "StartBgm" play loop>>
 <<audio "DianTi" play>>
-<center><img src="./img/电梯手机.png" width="75%"></center>
+<center><img src="./img/DianTiPhone.png" width="75%"></center>
 
 <<type 30ms>>
 “8:15，电梯第23层，会议、客户、笑容、话术、数据……还有，那句话。”
@@ -94,7 +98,7 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 
 :: 家中 [nobr 序章：念时的日常]
 <<audio "Keyboard" play>>
-<center><img src="./img/日历.png" width="60%"></center>
+<center><img src="./img/RiLi.png" width="60%"></center>
 <<type 30ms>>
 墙上的日历或许有好几年没翻过了吧，过去对我来说不重要，也没有必要。
 <</type>><br>
@@ -221,7 +225,7 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 
 
 :: 拾起信件 [nobr 序章：念时的日常]
-<center><img src="./img/门口信封.png" width="80%"></center>
+<center><img src="./img/MenKouXinFeng.png" width="80%"></center>
 
 <<type 30ms>>
 我：（……这谁啊，大半夜来送信？）<br><br>
@@ -236,7 +240,7 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 
 
 :: 信的内容 [nobr 序章：念时的日常]
-<center><img src="./img/信件展开.png" width="80%"></center>
+<center><img src="./img/XinJianZhanKai.png" width="80%"></center>
 <<type 40ms>>
 给二十年后的我：<br><br>
 
@@ -276,7 +280,7 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 
 
 :: 提示1 [nobr 序章：念时的日常]
-<center><img src="./img/悠悠球摊位.png" width="80%"></center>
+<center><img src="./img/YouYouQiuTanWei.png" width="80%"></center>
 
 
 <<type 30ms>>
@@ -295,6 +299,7 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 
 
 :: 咖啡馆 [nobr 第一章：悠悠球的觉醒]
+<center><img src="./img/XiangYangLu.png" width="80%"></center>
 <<type 30ms>>
     （第二天）<br>
     “今日阴天，体感微凉，温度：24℃，朝星区午后局部地区有雨，明晚至后天将迎暴雨，周三概率达70%”<br><br>
@@ -311,6 +316,7 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 <</type>>
 
 :: 甜点线索 [nobr 第一章：悠悠球的觉醒]
+<center><img src="./img/Coffee.png" width="80%"></center>
 <<type 30ms>>
     <<linkreplace "询问摊贩的位置">>
         询问摊贩的位置<br><br>
@@ -339,6 +345,9 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 
 
 :: 邂逅悠悠球 [nobr 第一章：悠悠球的觉醒]
+<<audio "StartBgm" stop>>
+<<audio "Seek" play loop>>
+
 <<type 30ms>>
     找到了！<br><br>
     我：“好久不见，<<print $YouYouQiuName>>。“<br><br>
@@ -393,7 +402,7 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 
 
 :: 悠悠球线缝合 [nobr 第一章：悠悠球的觉醒]
-<center><img src="./img/悠悠球3.png" width="50%"></center>
+<center><img src="./img/YouYouQiu3.png" width="50%"></center>
 
 <<type 30ms>>
     //悠悠球，从来不只是技巧的比赛。//<br><br>
@@ -469,6 +478,8 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 
 
 :: 接受挑战 [nobr 第一章：悠悠球的觉醒]
+<<audio "Seek" stop>>
+<<audio "Cur" play loop>>
 <<type 30ms>>
 我定了定神，眼底不自觉泛起熟悉又陌生的热意。<br><br>
 
@@ -568,8 +579,6 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 
     “就这么定了哈，赶在今晚十点前发我邮箱啊，辛苦啦小念～”<br><br>
 
-    【通话结束音】<br><br>
-
     ……考核的时间，是今天晚上七点。<br><br>
 
     <<print $YouYouQiuName>>（火光闪烁了一下）：“......你要回去吗？”<br><br>
@@ -641,8 +650,6 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 
 
 :: 列车站 [nobr 第二章：列车到站]
-【背景音：列车运行声】<br>
-
 <<type 30ms>>
 “各位旅客请注意，<br><br>
 列车即将到达：XX镇站。<br><br>
@@ -694,7 +701,6 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 :: 睡前故事 [nobr 第二章：讲个故事来听听]
 <<type 30ms>>
 古古：“看起来，你需要休息……”<br><br>
-【背景音：时钟滴答声】<br><br>
 房间里只有时钟的滴答声和略显烦躁的翻身声。<br><br>
 古古：“睡不着吗？城市的灯光太亮，把星星赶跑了，连梦也找不到了方向……”<br><br>
 我紧握的拳头似乎放松了一点，古古似乎也察觉到了这细微的变化。<br><br>
@@ -867,8 +873,9 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 
 
 :: 分支HE [nobr HE路线高潮]
-
-<center><img src="./img/x世界.png" width="60%"></center>
+<<audio "Cur" stop>>
+<<audio "HEBgm" play loop>>
+<center><img src="./img/XWorld.png" width="60%"></center>
 
 <<type 30ms>>
 然而，破旧巷道尽头，树屋早已不在，留下的，只有树桩和工厂。<br><br>
@@ -932,10 +939,13 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 眼神中的麻木被一种复杂的情感取代——<br><br>
 有怀念，有酸楚，也有一丝被强压下去的、久违的亮光。<br><br>
 你的声音沙哑，带着不易察觉的颤抖。<br><br>
-<center><h2>——HE：和解——</h2></center>
+<center><h2>——HE：和解——</h2></center><br><br>
+[[开发者留言]]
 
 
 :: 分支BE [nobr 终章：拒绝]
+<<audio "Cur" stop>>
+<<audio "BEBgm" play>>
 <center><img src="./img/BE.png" width="80%"></center>
 <<type 30ms>>
     也许，我从未真正属于那个世界。<br><br>
@@ -946,7 +956,13 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
     文件、报表、会议、客户……一切又恢复正常。<br><br>
     只是，每当我经过玩具展柜时，手会无意识地一紧，却什么都没抓住。<br><br>
     ——在时光尽头，那个不敢拥抱童年的大人，终于失去了曾经握住星星的手。<br><br>
-    <center><h2>——BE：失控者——</h2></center>
+    <center><h2>——BE：失控者——</h2></center><br><br>
+    [[开发者留言]]
 <</type>>
 
 
+:: 开发者留言
+66：零食好吃捏~~~~
+慕辽：画画一定要记得分图层
+绘星：不要抢我的闪电泡芙>_<
+SKewer：花谱小姐重度依赖Ψ(￣(ｴ)￣)Ψ
