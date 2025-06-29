@@ -111,7 +111,12 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 &lt;&lt;set $PlayerName = &quot;念时&quot;&gt;&gt;
 &lt;&lt;set $ColleagueAName = &quot;同事A&quot;&gt;&gt;
 &lt;&lt;set $XWorldName = &quot;X世界&quot;&gt;&gt;
-&lt;&lt;set $YouYouQiuName = &quot;赤焰流星&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="封面" tags="nobr" position="225,100" size="100,100">&lt;h1&gt;&lt;center&gt;CGJ2025视觉小说&lt;/center&gt;&lt;/h1&gt;&lt;br&gt;
+&lt;&lt;set $YouYouQiuName = &quot;赤焰流星&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;DianTi&quot; &quot;./audio/sfx/电梯.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;Keyboard&quot; &quot;./audio/sfx/键盘敲击.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;Phone&quot; &quot;./audio/sfx/来点.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;Door&quot; &quot;./audio/sfx/敲门.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;StartBgm&quot; &quot;./audio/bgm/开头.mp3&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="封面" tags="nobr" position="225,100" size="100,100">&lt;h1&gt;&lt;center&gt;CGJ2025视觉小说&lt;/center&gt;&lt;/h1&gt;&lt;br&gt;
 
 队伍：谁才是佬大！&lt;br&gt;
 文案：绘星&lt;br&gt;
@@ -119,10 +124,9 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 小全：慕辽&lt;br&gt;
 吉祥物：SKewer&lt;br&gt;
 &lt;br&gt;
-[[开始游戏-&gt;序言]]</tw-passagedata><tw-passagedata pid="3" name="序言" tags="nobr 序章：念时的日常" position="350,100" size="100,100">【背景音：电梯运行声】&lt;br&gt;
-【画面：电梯内图】&lt;br&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://i.ibb.co/TDmskJnv/image.png&quot; width=&quot;50%&quot;&gt;&lt;/center&gt;
+[[开始游戏-&gt;序言]]</tw-passagedata><tw-passagedata pid="3" name="序言" tags="nobr 序章：念时的日常" position="350,100" size="100,100">&lt;&lt;audio &quot;StartBgm&quot; play loop&gt;&gt;
+&lt;&lt;audio &quot;DianTi&quot; play&gt;&gt;
+&lt;center&gt;&lt;img src=&quot;./img/电梯手机.png&quot; width=&quot;75%&quot;&gt;&lt;/center&gt;
 
 &lt;&lt;type 30ms&gt;&gt;
 “8:15，电梯第23层，会议、客户、笑容、话术、数据……还有，那句话。”
@@ -133,15 +137,15 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 &lt;&lt;/type&gt;&gt;&lt;br&gt;
 
 &lt;&lt;type 30ms&gt;&gt;
-&lt;strong&gt;$ColleagueAName&lt;/strong&gt;（嚼着口香糖）：“哟，念哥，这表也太有年代感了吧？儿童款？”
+&lt;strong&gt;$ColleagueAName&lt;/strong&gt;（吹破泡泡糖）：“哟，念哥这古董表？儿童节礼物？”
 &lt;&lt;/type&gt;&gt;&lt;br&gt;
 
 &lt;&lt;type 30ms&gt;&gt;
-（甩来一份报表，纸页刮过&lt;strong&gt;$PlayerName&lt;/strong&gt;的嘴角。）
+（会议上，组长甩来一份报表，纸页刮过&lt;strong&gt;$PlayerName&lt;/strong&gt;的嘴角。）
 &lt;&lt;/type&gt;&gt;&lt;br&gt;
 
 &lt;&lt;type 30ms&gt;&gt;
-“上周你做的宣传方案根本不对路！客户要的是“省心”，你给人整了个“童年梦想””
+“上周你做的宣传方案根本不对路！客户要的是“省心”，你给人整了个“童年梦想”。”
 &lt;&lt;/type&gt;&gt;&lt;br&gt;
 
 &lt;&lt;type 30ms&gt;&gt;
@@ -149,7 +153,7 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 &lt;&lt;/type&gt;&gt;&lt;br&gt;
 
 &lt;&lt;type 30ms&gt;&gt;
-“搞情怀那套？醒醒吧，现在是商业社会。“
+“搞情怀这套？醒醒吧，现在是商业社会。“
 &lt;&lt;/type&gt;&gt;&lt;br&gt;
 
 &lt;&lt;type 200ms&gt;&gt;
@@ -163,7 +167,8 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
             [[下班回到家中-&gt;家中]]
         &lt;&lt;/type&gt;&gt;
     &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="家中" tags="nobr 序章：念时的日常" position="600,100" size="100,100">【音效：键盘敲击声】&lt;br&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="家中" tags="nobr 序章：念时的日常" position="600,100" size="100,100">&lt;&lt;audio &quot;Keyboard&quot; play&gt;&gt;
+&lt;center&gt;&lt;img src=&quot;./img/日历.png&quot; width=&quot;60%&quot;&gt;&lt;/center&gt;
 &lt;&lt;type 30ms&gt;&gt;
 墙上的日历或许有好几年没翻过了吧，过去对我来说不重要，也没有必要。
 &lt;&lt;/type&gt;&gt;&lt;br&gt;
@@ -173,41 +178,72 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 &lt;&lt;/type&gt;&gt;&lt;br&gt;
 
 &lt;&lt;type 30ms&gt;&gt;
-我：“最后一件待办事项，完成。”
+发送，提交。
 &lt;&lt;/type&gt;&gt;&lt;br&gt;
 
 &lt;&lt;type 30ms&gt;&gt;
 ”呼~“&lt;br&gt;&lt;br&gt;
-[[伸个懒腰-&gt;Boss催促]]
-&lt;&lt;/type&gt;&gt;&lt;br&gt;</tw-passagedata><tw-passagedata pid="6" name="Boss催促" tags="nobr 序章：念时的日常" position="725,100" size="100,100">【音效：手机电话铃声】&lt;br&gt;
+    &lt;&lt;linkreplace &quot;伸个懒腰&quot;&gt;&gt;
+&lt;&lt;type 30ms&gt;&gt;
+    我抬起头，看向熟悉得不能再熟悉的房间。&lt;br&gt;&lt;br&gt;
+
+    墙上是三年前参加公司团建得来的“优秀员工”奖牌，边缘起了锈。&lt;br&gt;
+    书桌上，放着一本从没翻过的“如何高效管理时间”。&lt;br&gt;
+    椅子上叠着三件一模一样的灰衬衫，干净、整齐、没感情。&lt;br&gt;&lt;br&gt;
+
+    空气里有点尘味，也可能是空。&lt;br&gt;&lt;br&gt;
+
+    我：“……我居然已经习惯这种味道了。”&lt;br&gt;&lt;br&gt;
+
+    （这么多年了，我到底留下了什么？）&lt;br&gt;
+    （如果我突然消失了，这个房间，会想我吗？）&lt;br&gt;&lt;br&gt;
+
+    ……真是的，怎么又开始说傻话了。&lt;br&gt;&lt;br&gt;
+
+    [[电话响起-&gt;Boss催促]]
+&lt;&lt;/type&gt;&gt;
+
+    &lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/type&gt;&gt;&lt;br&gt;</tw-passagedata><tw-passagedata pid="6" name="Boss催促" tags="nobr 序章：念时的日常" position="725,100" size="100,100">&lt;&lt;audio &quot;Phone&quot; play&gt;&gt;
 &lt;br&gt;
-&lt;&lt;linkreplace &quot;电话响了&quot;&gt;&gt;
     &lt;&lt;type 30ms&gt;&gt;
         “小念啊！”&lt;br&gt;
         &lt;br&gt;
-        （电话另一端炸开&lt;strong&gt;老板&lt;/strong&gt;带着烟酒味的笑声）&lt;br&gt;
+        （电话另一端炸开&lt;strong&gt;老板&lt;/strong&gt;带着烟嗓的笑声）&lt;br&gt;
         &lt;br&gt;
         “刚刚看你把‘树屋积木’方案删得干干净净，我就知道你终于懂事了！”&lt;br&gt;
         &lt;br&gt;
-        “我还记得，你刚毕业那会，可有干劲了......”&lt;br&gt;
+        “我还记得，你刚入职那会，可有干劲了......”&lt;br&gt;
         &lt;br&gt;
+        [[认真倾听-&gt;不省电]]&lt;br&gt;
         [[开启省电模式-&gt;省电]]
-    &lt;&lt;/type&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="省电" tags="nobr 序章：念时的日常" position="850,100" size="100,100">&lt;&lt;type 30ms&gt;&gt;
-&lt;&lt;linkreplace &quot;......&quot;&gt;&gt;
-        ......&lt;br&gt;
-        &lt;&lt;linkreplace &quot;...&quot;&gt;&gt;
-            ...&lt;br&gt;
-            &lt;br&gt;
-            &lt;&lt;type 30ms&gt;&gt;
-            同样的内容，每天都在重复，就像货架上堆叠的玩具包装盒，按固定序列开合封箱，连胶带撕拉的锯齿都一模一样。&lt;br&gt;&lt;br&gt;
-            待办事项真正的最后一项——听老板的深夜感慨。&lt;br&gt;&lt;br&gt;
-            哎——&lt;br&gt;&lt;br&gt;
-            先[[打扫屋子-&gt;来信]]吧。
-            &lt;&lt;/type&gt;&gt;
-        &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="来信" tags="nobr 序章：念时的日常" position="975,100" size="100,100">【音效：敲门声】&lt;br&gt;&lt;br&gt;
+    &lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="不省电" tags="nobr 序章：念时的日常" position="850,100" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+    “小念啊...（打酒嗝）你这孩子什么都好，就是太拼！”&lt;br&gt;&lt;br&gt;
+    （老板的声音突然压低）&lt;br&gt;&lt;br&gt;
+    “上周看你咳得撕心裂肺还加班，我让前台在你抽屉塞了枇杷膏...（停顿）别糟蹋了听见没？”&lt;br&gt;&lt;br&gt;
+    [[愣住-&gt;不省电愣住]]&lt;br&gt;
+    [[低声回应-&gt;不省电低声回应]]
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="不省电愣住" tags="nobr 序章：念时的日常" position="975,100" size="100,100">&lt;&lt;type 40ms&gt;&gt;
+    我握紧手机。&lt;br&gt;&lt;br&gt;
+    ——枇杷膏？ 那个印着俗气梅花图案的玻璃瓶...&lt;br&gt;&lt;br&gt;
+    原来不是行政部的统一派发品？&lt;br&gt;
+    &lt;br&gt;
+    （电话那头传来打火机开合的咔哒声）&lt;br&gt;&lt;br&gt;
+    “那个树屋方案...（叹气）其实挺有意思。”&lt;br&gt;&lt;br&gt;
+    “但投资人只认数据...你明白吧？”&lt;br&gt;
+    [[......-&gt;来信]]
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="不省电低声回应" tags="nobr 序章：念时的日常" position="1100,100" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+    我：“...明白的，王总。”&lt;br&gt;&lt;br&gt;
+    （听筒里只剩电流杂音，像童年坏掉的收音机）&lt;br&gt;
+        &lt;br&gt;
+    待办事项的最后一项——&lt;br&gt;
+    听老板的深夜感慨与枇杷膏的[[余味-&gt;来信]]。
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="省电" tags="nobr 序章：念时的日常" position="1225,100" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+    &quot;数据！报表！转化率！明白吗？&quot;&lt;br&gt;&lt;br&gt;
+    同样的内容，每天都在重复，就像货架上堆叠的玩具包装盒，按固定序列开合封箱，连胶带撕拉的锯齿都一模一样。&lt;br&gt;&lt;br&gt;
+    待办事项真正的最后一项——听老板的深夜训斥。&lt;br&gt;&lt;br&gt;
+    [[哎——-&gt;来信]]&lt;br&gt;&lt;br&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="来信" tags="nobr 序章：念时的日常" position="100,225" size="100,100">&lt;&lt;audio &quot;Door&quot; play&gt;&gt;
 
 &lt;&lt;type 30ms&gt;&gt;
     我：“谁啊？”&lt;br&gt;
@@ -224,37 +260,37 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
             &lt;&lt;/linkreplace&gt;&gt;
         &lt;&lt;/linkreplace&gt;&gt;
     &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="拾起信件" tags="nobr 序章：念时的日常" position="1100,100" size="100,100">【画面：家门口信件图】
-【音效：纸张摩擦声】&lt;br&gt;&lt;br&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="拾起信件" tags="nobr 序章：念时的日常" position="225,225" size="100,100">&lt;center&gt;&lt;img src=&quot;./img/门口信封.png&quot; width=&quot;80%&quot;&gt;&lt;/center&gt;
 
 &lt;&lt;type 30ms&gt;&gt;
 我：（……这谁啊，大半夜来送信？）&lt;br&gt;&lt;br&gt;
-我打开门，发现地上有封信。&lt;br&gt;&lt;br&gt;
+打开门，发现地上有封信。&lt;br&gt;&lt;br&gt;
 纸封泛黄，边角磨损，像是从遥远旧时光爬出来的老物件。&lt;br&gt;&lt;br&gt;
 
-落款处只写了五个歪歪扭扭的字：“//给未来的我//”&lt;br&gt;&lt;br&gt;
+落款洇着水迹：「给二十年后的我」&lt;br&gt;&lt;br&gt;
 
-&lt;&lt;linkreplace &quot;打开信封&quot;&gt;&gt;
 [[打开信封-&gt;信的内容]]
-&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="信的内容" tags="nobr 序章：念时的日常" position="1225,100" size="100,100">&lt;&lt;type 40ms&gt;&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="信的内容" tags="nobr 序章：念时的日常" position="350,225" size="100,100">&lt;center&gt;&lt;img src=&quot;./img/信件展开.png&quot; width=&quot;80%&quot;&gt;&lt;/center&gt;
+&lt;&lt;type 40ms&gt;&gt;
 给二十年后的我：&lt;br&gt;&lt;br&gt;
 
-你现在是不是已经变成“大人”啦？会不会也开始喜欢喝咖啡、穿西装、说一些听不懂但很厉害的话？&lt;br&gt;&lt;br&gt;
+你现在是不是已经变成“无聊的大人”啦？&lt;br&gt;
+会不会也开始喜欢喝咖啡、穿西装、说一些听不懂的话？&lt;br&gt;&lt;br&gt;
 
-你还记得 $XWorldName 吗？你说要盖到月亮上去，还说将来要做玩具店的老大，让所有小朋友都能开心！&lt;br&gt;&lt;br&gt;
+你还记得&lt;&lt;print $XWorldName&gt;&gt;吗？&lt;br&gt;
+你说要盖到月亮上去，还说将来要做玩具们的老大，让所有小朋友都能开心！&lt;br&gt;&lt;br&gt;
 
 如果你忘了，就回来找我吧。&lt;br&gt;&lt;br&gt;
-我在“$XWorldName”等你。&lt;br&gt;&lt;br&gt;
+我在老地方等你，&lt;&lt;print $XWorldName&gt;&gt;的灯还一直亮着。&lt;br&gt;&lt;br&gt;
 
 一定要来喔。^_^&lt;br&gt;&lt;br&gt;
 
-—— 10岁的$PlayerName&lt;br&gt;&lt;br&gt;
+—— 10岁的&lt;&lt;print $PlayerName&gt;&gt;&lt;br&gt;&lt;br&gt;
     &lt;&lt;linkreplace &quot;......&quot;&gt;&gt;
         ......&lt;br&gt;
         [[轻声读出“X世界”三个字-&gt;动摇]]
     &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="动摇" tags="nobr 序章：念时的日常" position="100,225" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="动摇" tags="nobr 序章：念时的日常" position="475,225" size="100,100">&lt;&lt;type 30ms&gt;&gt;
 “X世界……”&lt;br&gt;&lt;br&gt;
 
 一个久远到几乎模糊的词语，像是童年某次游戏时不小心念出口的魔咒。&lt;br&gt;&lt;br&gt;
@@ -264,28 +300,21 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
 是......什么呢？&lt;br&gt;&lt;br&gt;
 
 [[翻看信件背面-&gt;提示1]]
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="提示1" tags="nobr 序章：念时的日常" position="225,225" size="100,100">【画面：和$YouYouQiuName邂逅的摊贩照片】&lt;br&gt;&lt;br&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="提示1" tags="nobr 序章：念时的日常" position="600,225" size="100,100">&lt;center&gt;&lt;img src=&quot;./img/悠悠球摊位.png&quot; width=&quot;80%&quot;&gt;&lt;/center&gt;
 
 
 &lt;&lt;type 30ms&gt;&gt;
     一个街边小摊，似曾相识的悠悠球......&lt;br&gt;&lt;br&gt;
     一旁写着：“&lt;strong&gt;//和死党，永远的$XWorldName！//&lt;/strong&gt;”&lt;br&gt;&lt;br&gt;
-    $XWorldName，会是是这个小摊吗？&lt;br&gt;&lt;br&gt;
+    $XWorldName，会是这个小摊吗？&lt;br&gt;&lt;br&gt;
     等等！！&lt;br&gt;&lt;br&gt;
-    一瞬间，记忆如决堤洪水，汹涌袭来。我认得它，它叫：&lt;br&gt;&lt;br&gt;
-    [[天煞！-&gt;寻找悠悠球][$YouYouQiuName = &quot;天煞&quot;]]&lt;br&gt;
-    [[天马流星！-&gt;寻找悠悠球][$YouYouQiuName = &quot;天马流星&quot;]]&lt;br&gt;
-    [[赤焰流星！-&gt;寻找悠悠球][$YouYouQiuName = &quot;赤焰流星&quot;]]&lt;br&gt;
-    [[暴风超音！-&gt;寻找悠悠球][$YouYouQiuName = &quot;暴风超音&quot;]]&lt;br&gt;
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="寻找悠悠球" tags="nobr 序章：念时的日常" position="350,225" size="100,100">&lt;&lt;type 30ms&gt;&gt;
-    这个摊子，我记得应该就在这家店附近。&lt;br&gt;&lt;br&gt;
-    &lt;&lt;linkreplace &quot;打开手机地图&quot;&gt;&gt;
-        打开手机地图&lt;br&gt;&lt;br&gt;
-        &lt;&lt;type 30ms&gt;&gt;
-            找到了，就是[[这里-&gt;咖啡馆]]。
-        &lt;&lt;/type&gt;&gt;
+    一瞬间，记忆如决堤洪水，汹涌袭来。我认得它——赤焰流星。&lt;br&gt;&lt;br&gt;
+    至于这个摊子。&lt;br&gt;&lt;br&gt;
+    &lt;&lt;linkreplace &quot;打开手机&quot;&gt;&gt;
+        指尖在屏幕上快速滑动着。
+        我：“就是[[这儿-&gt;咖啡馆]]！”
     &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="咖啡馆" tags="nobr 第一章：悠悠球的觉醒" position="475,225" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="咖啡馆" tags="nobr 第一章：悠悠球的觉醒" position="725,225" size="100,100">&lt;&lt;type 30ms&gt;&gt;
     （第二天）&lt;br&gt;
     “今日阴天，体感微凉，温度：24℃，朝星区午后局部地区有雨，明晚至后天将迎暴雨，周三概率达70%”&lt;br&gt;&lt;br&gt;
     我：（看来过几天雨不小啊，得在待办事项上加一条：收衣服）&lt;br&gt;&lt;br&gt;
@@ -294,24 +323,20 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
         收起便签，离开地铁&lt;br&gt;&lt;br&gt;
     &lt;&lt;type 30ms&gt;&gt;（应该就是这家咖啡店了）&lt;br&gt;&lt;br&gt;
     店员：“欢迎光临，先生想喝点什么？”&lt;br&gt;&lt;br&gt;
-    我：来杯&lt;br&gt;&lt;br&gt;
-    [[美式-&gt;甜点线索][$Coffee = &quot;美式&quot;]]&lt;br&gt;
-    [[生椰拿铁-&gt;甜点线索][$Coffee = &quot;生椰拿铁&quot;]]&lt;br&gt;
-    [[燕麦拿铁-&gt;甜点线索][$Coffee = &quot;燕麦拿铁&quot;]]&lt;br&gt;
-    [[轻轻茉莉-&gt;甜点线索][$Coffee = &quot;轻轻茉莉&quot;]]&lt;br&gt;
+    我：“来杯生椰拿铁。”&lt;br&gt;&lt;br&gt;
+    店员：“好的，先生[[稍等-&gt;甜点线索]]。”&lt;br&gt;&lt;br&gt;
     &lt;&lt;/type&gt;&gt;
     &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="甜点线索" tags="nobr 第一章：悠悠球的觉醒" position="600,225" size="100,100">&lt;&lt;type 30ms&gt;&gt;
-    店员：”好的，先生稍等。“&lt;br&gt;&lt;br&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="甜点线索" tags="nobr 第一章：悠悠球的觉醒" position="850,225" size="100,100">&lt;&lt;type 30ms&gt;&gt;
     &lt;&lt;linkreplace &quot;询问摊贩的位置&quot;&gt;&gt;
         询问摊贩的位置&lt;br&gt;&lt;br&gt;
         &lt;&lt;type 30ms&gt;&gt;
         （店员指尖无意识地蜷缩了一下）&lt;br&gt;&lt;br&gt;
         店员（避开视线）：”...不好意思先生，我从来没听说过这个地方。“&lt;br&gt;&lt;br&gt;
         （她转身制作咖啡时，袖口掠过柜台，像抹去尘埃般扫过台面）&lt;br&gt;&lt;br&gt;
-        店员：”您的$Coffee，还有——。“&lt;br&gt;&lt;br&gt;
+        店员：”您的咖啡，还有——。“&lt;br&gt;&lt;br&gt;
         （白瓷盘轻叩桌面）&lt;br&gt;
-        “今日份试吃新品「杏仁豆腐」~”&lt;br&gt;&lt;br&gt;
+        “今日份试吃新品「闪电泡芙」~”&lt;br&gt;&lt;br&gt;
         &lt;&lt;linkreplace &quot;打开手机再次确认摊贩位置&quot;&gt;&gt;
             甜点碟底压着三角形纸尖，糖霜正缓慢濡湿纸角&lt;br&gt;&lt;br&gt;
                 &lt;&lt;linkreplace &quot;抽出纸条&quot;&gt;&gt;
@@ -325,69 +350,441 @@ Config.saves.slots = 5;        // 存档槽位设置（范围0-16）
         &lt;&lt;/linkreplace&gt;&gt;
         &lt;&lt;/type&gt;&gt;
     &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="邂逅悠悠球" tags="nobr 第一章：悠悠球的觉醒" position="725,225" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="邂逅悠悠球" tags="nobr 第一章：悠悠球的觉醒" position="975,225" size="100,100">&lt;&lt;type 30ms&gt;&gt;
     找到了！&lt;br&gt;&lt;br&gt;
     我：“好久不见，&lt;&lt;print $YouYouQiuName&gt;&gt;。“&lt;br&gt;&lt;br&gt;
     [[触碰悠悠球-&gt;悠悠球回忆]]
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="悠悠球回忆" tags="nobr 第一章：悠悠球的觉醒" position="850,225" size="100,100">【画面：摊位购买悠悠球】
-
-&lt;&lt;type 30ms&gt;&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="悠悠球回忆" tags="nobr 第一章：悠悠球的觉醒" position="1100,225" size="100,100">&lt;&lt;type 30ms&gt;&gt;
     我望着手中的&lt;&lt;print $YouYouQiuName&gt;&gt;，记忆如热浪回涌，不知为何，眼角竟有些湿润。&lt;br&gt;&lt;br&gt;
     7岁那年，我用攒了三个月的零花钱，在小摊上买下了他——&lt;&lt;print $YouYouQiuName&gt;&gt;。&lt;br&gt;&lt;br&gt;
     刚拆封，那颗通体燃红的悠悠球竟猛地挣脱手掌，在空中火花四溅地旋转炸响。&lt;br&gt;&lt;br&gt;
     &lt;&lt;type 40ms&gt;&gt;
-    “就你也配碰我？”&lt;br&gt;&lt;br&gt;
+    “你的技术还不够，别碰我！”&lt;br&gt;&lt;br&gt;
     它带着火气的声音，像个桀骜不驯的少年。&lt;br&gt;&lt;br&gt;
     我吓了一跳，慌忙去抓——它却再次挣脱，在地上狂转不休。&lt;br&gt;&lt;br&gt;
     那段日子里，每一次练习都像挑战极限：指尖被抽得通红，动作稍慢就被它无情甩飞。&lt;br&gt;&lt;br&gt;
-    “手这么慢还想打比赛？不如回家堆积木去！”&lt;br&gt;&lt;br&gt;
+    “收线太慢了，力度也没掌控好，下次多注意。”&lt;br&gt;&lt;br&gt;
     可我没有放弃。&lt;br&gt;&lt;br&gt;
     白天在教室默背招式图谱，傍晚偷偷在街角路灯下苦练「烈焰回旋」、「天火千绳」……&lt;br&gt;&lt;br&gt;
     手指磨出了厚茧，袖口被磨线划出一道道毛边。&lt;br&gt;&lt;br&gt;
     [[终于——-&gt;现实中的悠悠球]]&lt;br&gt;&lt;br&gt;
     &lt;&lt;/type&gt;&gt;
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="现实中的悠悠球" tags="nobr 第一章：悠悠球的觉醒" position="975,225" size="100,100">&lt;&lt;type 30ms&gt;&gt;
-    &lt;&lt;print $YouYouQiuName&gt;&gt;：“你发什么愣呢？别搞得像久别重逢的恋人。”&lt;br&gt;&lt;br&gt;
-    我：“谁？是谁在说话？“&lt;br&gt;
-    （我连忙纂紧&lt;&lt;print $YouYouQiuName&gt;&gt;，生怕这来之不易的重逢溜走）
-    &lt;&lt;print $YouYouQiuName&gt;&gt;：“疼疼疼，快[[松手-&gt;悠悠球刻字]]，你抓到刻字了！！！”
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="悠悠球刻字" tags="nobr 第一章：悠悠球的觉醒" position="1100,225" size="100,100">&lt;&lt;type 30ms&gt;&gt;
-    &lt;&lt;print $YouYouQiuName&gt;&gt;：“要不是你用圆规乱折腾......”&lt;br&gt;&lt;br&gt;
-    “不过也罢，咱俩的羁绊......也不止于此。”&lt;br&gt;&lt;br&gt;
-    我愣了一下，又突然笑出声来：&lt;br&gt;&lt;br&gt;
-    “你真是一点也[[没变-&gt;悠悠球线断]]。”
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="悠悠球线断" tags="nobr 第一章：悠悠球的觉醒" position="1225,225" size="100,100">&lt;center&gt;&lt;img src=&quot;https://i.ibb.co/q4Kd876/image.png&quot; width=&quot;50%&quot;&gt;&lt;/center&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="现实中的悠悠球" tags="nobr 第一章：悠悠球的觉醒" position="1225,225" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+    &lt;&lt;print $YouYouQiuName&gt;&gt;：“你发什么愣呢？”&lt;br&gt;&lt;br&gt;
+    我猛地抬头，左右张望，没人。&lt;br&gt;&lt;br&gt;
+    我：“谁在说话？“&lt;br&gt;&lt;br&gt;
+    寂静。除了风吹过树叶的哗啦声——没有任何回应。&lt;br&gt;&lt;br&gt;
+    我低头，看向手心的&lt;&lt;print $YouYouQiuName&gt;&gt;，通体燃红的表面像是悄悄跳了一下。&lt;br&gt;&lt;br&gt;
+    （错觉，还是？）&lt;br&gt;&lt;br&gt;
+    &lt;&lt;print $YouYouQiuName&gt;&gt;：“疼疼疼，快[[松手-&gt;悠悠球伤疤]]，你抓到伤疤了！！！”
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="悠悠球伤疤" tags="nobr 第一章：悠悠球的觉醒" position="100,350" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+    我一下把手收了回去，像被烫到了一样。&lt;br&gt;&lt;br&gt;
+    我：“等、等等......悠悠球......说话了？？？”&lt;br&gt;&lt;br&gt;
+    &lt;&lt;print $YouYouQiuName&gt;&gt;：“不过也罢，咱俩的羁绊......也不止于此。”&lt;br&gt;&lt;br&gt;
+    我愣了一下，随后突然笑出声来：&lt;br&gt;&lt;br&gt;
+    我：“你真是一点也[[没变-&gt;悠悠球线缝合]]。”&lt;br&gt;&lt;br&gt;
+    &lt;&lt;print $YouYouQiuName&gt;&gt;：“谁叫我是你的教练呢？”
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="悠悠球线缝合" tags="nobr 第一章：悠悠球的觉醒" position="225,350" size="100,100">&lt;center&gt;&lt;img src=&quot;./img/悠悠球3.png&quot; width=&quot;50%&quot;&gt;&lt;/center&gt;
 
 &lt;&lt;type 30ms&gt;&gt;
-    &lt;&lt;print $YouYouQiuName&gt;&gt;：“得了吧，当初要不是看你这么坚持，还用红领巾修好我的系绳的份上，我也不会成为教练队长。”&lt;br&gt;&lt;br&gt;
-
-    而那时我也终于明白：&lt;br&gt;&lt;br&gt;
-
-    我和&lt;&lt;print $YouYouQiuName&gt;&gt;异口同声：&lt;br&gt;&lt;br&gt;“//悠悠球，从来不只是技巧的比赛。//”&lt;br&gt;&lt;br&gt;
-    “//绳子的另一端，连接着的，是
-    &lt;&lt;linkreplace &quot;默契与羁绊&quot;&gt;&gt;
-        默契与羁绊//”。
-        &lt;&lt;type 30ms&gt;&gt;
-            $YouYouQiuName：“你这家伙......”&lt;br&gt;&lt;br&gt;
-            我们[[大笑-&gt;悠悠球审问]]起来。&lt;br&gt;&lt;br&gt;
-        &lt;&lt;/type&gt;&gt;
-    &lt;&lt;/linkreplace&gt;&gt;&lt;br&gt;&lt;br&gt;
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="悠悠球审问" tags="nobr 第一章：悠悠球的觉醒" position="100,350" size="100,100">&lt;&lt;type 30ms&gt;&gt;
-乘坐几个小时的地铁，现在已是夜晚，窗外是漆黑的梦，载着我虚无缥缈的过去。&lt;br&gt;&lt;br&gt;
-&lt;&lt;print $YouYouQiuName&gt;&gt;：“现在的你，还耍得动「天火千绳」”吗？&lt;br&gt;&lt;br&gt;
+    //悠悠球，从来不只是技巧的比赛。//&lt;br&gt;&lt;br&gt;
+    //球绳的另一端，连接着的，是[[默契与羁绊-&gt;悠悠球审问]]
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="悠悠球审问" tags="nobr 第一章：悠悠球的觉醒" position="350,350" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+回家乘坐几个小时的地铁，现在已是夜晚，窗外是漆黑的梦，载着我不愿回想的过去。&lt;br&gt;&lt;br&gt;
+&lt;&lt;print $YouYouQiuName&gt;&gt;来回飘动着，&lt;br&gt;&lt;br&gt;
+&lt;&lt;print $YouYouQiuName&gt;&gt;：“......现在的你，还耍得动「天火千绳」吗？”&lt;br&gt;&lt;br&gt;
 &lt;&lt;linkreplace &quot;尝试「天火千绳」&quot;&gt;&gt;
+    &lt;&lt;type 30ms&gt;&gt;
     我：“「天火千绳」——落！”&lt;br&gt;&lt;br&gt;
     &lt;&lt;print $YouYouQiuName&gt;&gt;：“太慢，你上次还能连三段！”&lt;br&gt;&lt;br&gt;
-    &lt;&lt;print $YouYouQiuName&gt;&gt;：“气势连上次的一半都没有！”&lt;br&gt;&lt;br&gt;
-    我：“......老子现在可是上班族了啊！”&lt;br&gt;&lt;br&gt;
-    可我依然一遍又一遍地挥舞，汗水打湿额角，指节隐隐作痛，&lt;br&gt;
-    但心跳却像久违地活了过来。&lt;br&gt;&lt;br&gt;
 
-    &lt;&lt;print $YouYouQiuName&gt;&gt;低声道：“你心里，还留着那个&lt;&lt;print $XWorldName&gt;&gt;。”&lt;br&gt;&lt;br&gt;
-    我沉默。
-    &lt;&lt;print $YouYouQiuName&gt;&gt;：“”
+    如何回应？&lt;br&gt;&lt;br&gt;
+    [[太久没练了-&gt;审问后解释原因]]&lt;br&gt;
+    [[继续尝试-&gt;审问后继续尝试]]&lt;br&gt;
+    [[先不说这个-&gt;审问完成]]
+    &lt;&lt;/type&gt;&gt;
 &lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="审问后解释原因" tags="nobr 第一章：悠悠球的觉醒" position="475,350" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+    &lt;&lt;print $YouYouQiuName&gt;&gt;：“生疏了？以前买下我的时候可[[不是这样-&gt;审问完成]]。”&lt;br&gt;&lt;br&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="审问后继续尝试" tags="nobr 第一章：悠悠球的觉醒" position="600,350" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+    一次又一次地尝试，汗水渗出&lt;br&gt;&lt;br&gt;
+    &lt;&lt;print $YouYouQiuName&gt;&gt;：“停！你的手腕姿势[[不对-&gt;审问完成]]！”&lt;br&gt;&lt;br&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="审问完成" tags="nobr 第一章：悠悠球的觉醒" position="725,350" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+    &lt;&lt;print $YouYouQiuName&gt;&gt;低语：“你心里，还留着那个&lt;&lt;print $XWorldName&gt;&gt;吗？”&lt;br&gt;&lt;br&gt;
+    [[沉默-&gt;训练计划]]&lt;br&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="训练计划" tags="nobr 第一章：悠悠球的觉醒" position="850,350" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+    次日清晨&lt;br&gt;&lt;br&gt;
+    “起——床——了！”&lt;br&gt;&lt;br&gt;
+    （感受到轻微的碰撞）&lt;br&gt;&lt;br&gt;
+    &lt;&lt;print $YouYouQiuName&gt;&gt;（悬浮在半空，散发着微光）：“身为你的教练，我就不会让你这个‘前队员’一直堕落下去。”&lt;br&gt;&lt;br&gt;
+    &lt;&lt;print $YouYouQiuName&gt;&gt;：“听着，为了确认你有没有资格重新踏入&lt;&lt;print $XWorldName&gt;&gt;，我会在半个月后对你进行一次正式考核。”&lt;br&gt;&lt;br&gt;
+    &lt;&lt;print $YouYouQiuName&gt;&gt;：“考核内容很简单：在我面前完美重现当年让你赢得‘入门许可’的两个招牌连招——「天火千绳」和「烈焰回旋」。”&lt;br&gt;&lt;br&gt;
+    &lt;&lt;print $YouYouQiuName&gt;&gt;：“只要你能通过考核...”&lt;br&gt;&lt;br&gt;
+    &lt;&lt;linkreplace &quot;稍作停顿&quot;&gt;&gt;
+        &lt;&lt;type 40ms&gt;&gt;
+            &lt;&lt;print $YouYouQiuName&gt;&gt;（压低声音，带着一丝不易察觉的期待）：“...我就告诉你真正通往&lt;&lt;print $XWorldName&gt;&gt;核心区域的方法。”&lt;br&gt;&lt;br&gt;
+            &lt;&lt;print $YouYouQiuName&gt;&gt;：“现在，从今天开始执行训练计划。”&lt;br&gt;&lt;br&gt;
 
+                我的回应：&lt;br&gt;
+                [[接受挑战——“明白了，开始吧！”-&gt;接受挑战]]&lt;br&gt;
+                [[讨价还价——“半个月...时间能不能再宽限点？”-&gt;讨价还价]]&lt;br&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="接受挑战" tags="nobr 第一章：悠悠球的觉醒" position="975,350" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+我定了定神，眼底不自觉泛起熟悉又陌生的热意。&lt;br&gt;&lt;br&gt;
+
+    “明白了，开始吧。”&lt;br&gt;&lt;br&gt;
+
+    &lt;&lt;print $YouYouQiuName&gt;&gt;：“哼，倒还有点当年那股子劲。”&lt;br&gt;&lt;br&gt;
+
+    它在空中旋转了几圈，火红的球身映出我专注的眼神。&lt;br&gt;&lt;br&gt;
+
+    “不过提醒你一句——&lt;strong&gt;这次没有‘试试看’的机会。&lt;/strong&gt;&lt;br&gt;
+    要么回归，要么...继续做你那个无聊的大人。”&lt;br&gt;&lt;br&gt;
+
+    （心跳如鼓，血液像又沸腾了起来。）&lt;br&gt;&lt;br&gt;
+
+    我轻轻握紧它，那熟悉的重量，仿佛将我从灰色生活中唤醒。&lt;br&gt;&lt;br&gt;
+
+    [[进入正式训练阶段-&gt;训练阶段开启]]
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="讨价还价" tags="nobr 第一章：悠悠球的觉醒" position="1100,350" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+    &lt;&lt;print $YouYouQiuName&gt;&gt;在空中停顿了一下，火红的光微微黯淡：“你是想找借口放弃吗？”&lt;br&gt;&lt;br&gt;
+
+    我：“不是，只是——我怕做不到。我已经不像小时候那样，时间是自己的……”&lt;br&gt;&lt;br&gt;
+
+    它轻哼一声，语气却不似最初那样咄咄逼人：“你现在也有选择权，只是你已经习惯了不选。”&lt;br&gt;&lt;br&gt;
+
+    &lt;&lt;print $YouYouQiuName&gt;&gt;：“可以宽限三天，最多。”&lt;br&gt;
+    “不是因为你弱，而是因为你诚实。”&lt;br&gt;&lt;br&gt;
+
+    我抬头看着它那团燃烧般的身影，心底某个沉睡的部分，正在慢慢苏醒。&lt;br&gt;&lt;br&gt;
+
+    [[进入正式训练阶段-&gt;训练阶段开启]]
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="训练阶段开启" tags="nobr 第一章：悠悠球的觉醒" position="1225,350" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+    然而练习并非一帆风顺。&lt;br&gt;
+    这是今天第五十次线圈弹飞失败了。&lt;br&gt;&lt;br&gt;
+    我：“......到底是哪出错了？”&lt;br&gt;&lt;br&gt;
+    &lt;&lt;print $YouYouQiuName&gt;&gt;：“......你收线太急，重心不稳，动作...太浮躁。”&lt;br&gt;&lt;br&gt;
+    我坐在地上，轻吹着被勒出血丝的手，一声不吭。&lt;br&gt;&lt;br&gt;
+    &lt;&lt;print $YouYouQiuName&gt;&gt;：“那什么，我，我找了个教学视频......在你邮件草稿箱里。”&lt;br&gt;&lt;br&gt;
+    我：“你还会发邮件？”&lt;br&gt;&lt;br&gt;
+    &lt;&lt;print $YouYouQiuName&gt;&gt;：“哼！我才不会教你怎么打开，自己找去。”&lt;br&gt;&lt;br&gt;
+
+    （它在空中飘了一圈，又故作随意地丢下一小盒创可贴。）&lt;br&gt;&lt;br&gt;
+
+    &lt;&lt;print $YouYouQiuName&gt;&gt;：“……别把手练坏了。”&lt;br&gt;&lt;br&gt;
+
+    （说完，它转过身，在空中尴尬地转了一圈。）&lt;br&gt;&lt;br&gt;
+
+    &lt;&lt;print $YouYouQiuName&gt;&gt;：“咳，我要去……准备下个训练combo。”  &lt;br&gt;&lt;br&gt;
+
+    （$YouYouQiuName嗖的一声飞走了）&lt;br&gt;&lt;br&gt;
+
+    我看着它扭扭捏捏的背影，忽然觉得，心里某块地方，也被轻轻缝了一针。  &lt;br&gt;&lt;br&gt;
+
+    [[继续训练-&gt;考核]]
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="考核" tags="nobr 第一章：悠悠球的觉醒" position="100,475" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+转眼来到考核的日子。&lt;br&gt;
+我拿着&lt;&lt;print $YouYouQiuName&gt;&gt;，感觉胜券在握。&lt;br&gt;&lt;br&gt;
+&lt;&lt;print $YouYouQiuName&gt;&gt;：“此次考核事关重大，那么考核就......”&lt;br&gt;&lt;br&gt;
+[[正式开始！-&gt;意外]]
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="意外" tags="nobr 第一章：悠悠球的觉醒" position="225,475" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+     &lt;&lt;linkreplace &quot;手机响起&quot;&gt;&gt;
+        
+    （我的手机猛地震了一下，屏幕上亮起三个字：&lt;strong&gt;王总（工作）&lt;/strong&gt;）&lt;br&gt;&lt;br&gt;
+
+    我：“……？”&lt;br&gt;&lt;br&gt;
+
+    &lt;&lt;linkreplace &quot;接通电话&quot;&gt;&gt;
+
+    电话那头，是熟悉的烟嗓与键盘声混杂的嘈杂：&lt;br&gt;&lt;br&gt;
+
+    “小念啊——方案客户要提了，说什么要‘紧急加急版本’！”&lt;br&gt;
+    “我猜你肯定在家，正好，今晚再帮我把那个动画广告改一下！”&lt;br&gt;&lt;br&gt;
+
+    我：“可是我……今天请了假，已经……”&lt;br&gt;&lt;br&gt;
+
+    “哎哟你小子不是一直说要表现自己吗？这种时候就要顶得上来啊！兄弟！”&lt;br&gt;&lt;br&gt;
+
+    （电话那头又响起纸张翻飞、谁在吼“数据呢”的声音）&lt;br&gt;&lt;br&gt;
+
+    “就这么定了哈，赶在今晚十点前发我邮箱啊，辛苦啦小念～”&lt;br&gt;&lt;br&gt;
+
+    【通话结束音】&lt;br&gt;&lt;br&gt;
+
+    ……考核的时间，是今天晚上七点。&lt;br&gt;&lt;br&gt;
+
+    &lt;&lt;print $YouYouQiuName&gt;&gt;（火光闪烁了一下）：“......你要回去吗？”&lt;br&gt;&lt;br&gt;
+
+    我盯着还握在掌中的&lt;&lt;print $YouYouQiuName&gt;&gt;，脑中一片混乱。&lt;br&gt;
+    考核、工作、梦想、现实，仿佛在指尖缠成一团打结的旧绳。&lt;br&gt;&lt;br&gt;
+
+    如何回应？&lt;br&gt;&lt;br&gt;
+
+    [[咬牙拒绝工作：“这次，我想为自己而活。”-&gt;坚定考核]]&lt;br&gt;
+    [[妥协加班：“……对不起，我必须回去。”-&gt;现实退场]]&lt;br&gt;
+    &lt;&lt;/linkreplace&gt;&gt;
+    &lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="坚定考核" tags="nobr HE路线起点" position="350,475" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+我：“……这次，我想为自己而活。”&lt;br&gt;&lt;br&gt;
+
+我按下了挂断键，像是切断了一条勒在脖子上的枷锁。&lt;br&gt;&lt;br&gt;
+
+&lt;&lt;print $YouYouQiuName&gt;&gt;的火焰悄然升腾，在夜色中像一颗星星指引方向。&lt;br&gt;&lt;br&gt;
+
+“来吧。”我深吸一口气，将它抛出——&lt;br&gt;&lt;br&gt;
+
+“【烈焰回旋】！”&lt;br&gt;&lt;br&gt;
+
+火红轨迹划破夜空，如同宣告童年的归来。&lt;br&gt;&lt;br&gt;
+
+[[完成考核-&gt;踏上寻找古古的路]]
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="现实退场" tags="nobr BE" position="475,475" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+我低下头，手指在电话“接听”与“挂断”之间徘徊，最终却没有任何动作。&lt;br&gt;&lt;br&gt;
+
+&lt;&lt;print $YouYouQiuName&gt;&gt;：“......你要回去吗？”&lt;br&gt;&lt;br&gt;
+
+我缓缓闭上眼。&lt;br&gt;&lt;br&gt;
+
+“......对不起，我必须回去。”&lt;br&gt;&lt;br&gt;
+
+（火光微微闪烁，仿佛在颤抖——然后黯淡下去。）&lt;br&gt;&lt;br&gt;
+
+——“梦想”，这两个字太遥远了吧？&lt;br&gt;&lt;br&gt;
+
+我不是孩子了，不能为了一个“X世界”丢掉[[饭碗和现实-&gt;分支BE]]。&lt;br&gt;&lt;br&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="踏上寻找古古的路" tags="nobr HE路线中段" position="600,475" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+&lt;&lt;print $YouYouQiuName&gt;&gt;（轻轻转圈）：“这家伙，也算合格了吧。”&lt;br&gt;&lt;br&gt;
+
+它缓缓浮现一段影像，一张泛黄的照片投影在空中——&lt;br&gt;
+【X世界总部：老街24号后巷外树屋】&lt;br&gt;&lt;br&gt;
+
+我握紧拳头，踏上旅程。&lt;br&gt;&lt;br&gt;
+
+——是时候[[找回他-&gt;列车站]]了。&lt;br&gt;&lt;br&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="列车站" tags="nobr 第二章：列车到站" position="725,475" size="100,100">【背景音：列车运行声】&lt;br&gt;
+
+&lt;&lt;type 30ms&gt;&gt;
+“各位旅客请注意，&lt;br&gt;&lt;br&gt;
+列车即将到达：XX镇站。&lt;br&gt;&lt;br&gt;
+下车的旅客请提前整理好随身物品，&lt;br&gt;&lt;br&gt;
+感谢您乘坐本次列车，&lt;br&gt;&lt;br&gt;
+祝您[[旅途愉快-&gt;卧室]]。”&lt;br&gt;&lt;br&gt;
+&lt;&lt;/type&gt;&gt;&lt;br&gt;</tw-passagedata><tw-passagedata pid="37" name="卧室" tags="nobr 第二章：小熊" position="850,475" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+我用略带锈迹的钥匙
+	&lt;&lt;linkreplace &quot;打开家门。&quot;&gt;&gt;打开家门。&lt;br&gt;&lt;br&gt;
+        &lt;&lt;type 30ms&gt;&gt;我环视着这个无比熟悉又陌生的房间。&lt;br&gt;&lt;br&gt;
+			最后，目光落在了椅子上的玩具熊——古古身上……&lt;br&gt;&lt;br&gt;
+			古古的眼珠在昏暗的光线下似乎极其轻微地[[闪烁了一下-&gt;好久不见]]。&lt;br&gt;&lt;br&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/type&gt;&gt;&lt;br&gt;</tw-passagedata><tw-passagedata pid="38" name="好久不见" tags="nobr 第二章：好久不见" position="975,475" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+    古古：“好久不见……你长大了呢！”&lt;br&gt;&lt;br&gt;
+	古古的声音温和、低沉，带着一种岁月沉淀的宁静。&lt;br&gt;&lt;br&gt;
+    我微微一怔，只是淡淡
+	&lt;&lt;linkreplace &quot;“嗯”了一声。&quot;&gt;&gt;“嗯”了一声。&lt;br&gt;&lt;br&gt;
+		&lt;&lt;type 30ms&gt;&gt;我随手将行李箱推到房间的角落——&lt;br&gt;&lt;br&gt;
+			然后整个人落在了床上……&lt;br&gt;&lt;br&gt;
+	        古古：“大城市，有趣吗？”&lt;br&gt;&lt;br&gt;
+			古古的话比先前更见温柔，像是在做小心的试探。&lt;br&gt;&lt;br&gt;
+			沉默在空气中弥漫……&lt;br&gt;&lt;br&gt;
+			我：“就那样吧……”&lt;br&gt;&lt;br&gt;
+			古古：“……你的眼睛。它们…看起来好远。像蒙上了雾气的星星。”&lt;br&gt;&lt;br&gt;
+	        我起身坐在床上，轻轻&lt;&lt;linkreplace &quot;拍了拍古古身上的灰。&quot;&gt;&gt;拍了拍古古身上的灰。&lt;br&gt;&lt;br&gt;
+			&lt;&lt;type 30ms&gt;&gt;
+			我：“现在没有雾气了吧。”&lt;br&gt;&lt;br&gt;
+			拍完灰后，我再次[[躺回床上-&gt;睡前故事]]。&lt;&lt;/type&gt;&gt;
+			&lt;&lt;/linkreplace&gt;&gt;
+	    &lt;&lt;/type&gt;&gt;
+	&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="睡前故事" tags="nobr 第二章：讲个故事来听听" position="1100,475" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+古古：“看起来，你需要休息……”&lt;br&gt;&lt;br&gt;
+【背景音：时钟滴答声】&lt;br&gt;&lt;br&gt;
+房间里只有时钟的滴答声和略显烦躁的翻身声。&lt;br&gt;&lt;br&gt;
+古古：“睡不着吗？城市的灯光太亮，把星星赶跑了，连梦也找不到了方向……”&lt;br&gt;&lt;br&gt;
+我紧握的拳头似乎放松了一点，古古似乎也察觉到了这细微的变化。&lt;br&gt;&lt;br&gt;
+古古：“还记得…奶奶的针线篮吗？&lt;br&gt;&lt;br&gt;
+里面除了彩色的线和亮晶晶的纽扣，还装着好多好多的故事。&lt;br&gt;&lt;br&gt;
+那些故事啊，就像藏在棉花糖里的星星。&lt;br&gt;&lt;br&gt;
+今晚…要不要听一个？一个关于…[[迷路星星的故事-&gt;故事01]]？”&lt;br&gt;&lt;br&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="故事01" tags="nobr 第二章：迷路星星的故事" position="1225,475" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+在最高的那片云朵山上，住着一颗小小的星星，名字叫芒芒。&lt;br&gt;&lt;br&gt;
+芒芒是所有星星里最亮、最活泼的一颗，&lt;br&gt;&lt;br&gt;
+它总爱在夜空中滑滑梯，从银河这头“咻——”地溜到那头，留下一串金灿灿的笑声。&lt;br&gt;&lt;br&gt;
+（月光仿佛变得更加柔和）&lt;br&gt;&lt;br&gt;
+（古古胸口的纽扣，在黑暗中似乎极其微弱地闪烁了一下）&lt;br&gt;&lt;br&gt;
+可是有一天，芒芒玩得太开心了，它滑啊滑，滑得太远太远，不小心滑出了世界的边缘，&lt;br&gt;&lt;br&gt;
+掉进了一片……好大好大、灰蒙蒙的雾里。 &lt;br&gt;&lt;br&gt;
+(古古的声音压低，带着一丝紧张) &lt;br&gt;&lt;br&gt;
+那片雾又冷又湿，把芒芒的光都裹住了。&lt;br&gt;&lt;br&gt;
+它害怕极了，想飞回去，可四周全是灰蒙蒙的墙，它找不到回家的路了。&lt;br&gt;&lt;br&gt;
+它的光越来越暗，越来越冷…[[就像…就像…-&gt;故事02]]&lt;br&gt;&lt;br&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="故事02" tags="nobr 第二章：守夜小熊" position="100,600" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+就在这时啊，芒芒听到了一声呼唤！&lt;br&gt;&lt;br&gt;
+很轻很轻，像风吹过风铃，但芒芒一下子就听到了！&lt;br&gt;&lt;br&gt;
+因为那是它最熟悉的声音！&lt;br&gt;&lt;br&gt;
+是它最好的朋友——守夜小熊的声音！&lt;br&gt;&lt;br&gt;
+守夜小熊站在最高的山顶上，&lt;br&gt;&lt;br&gt;
+举着一盏小小的、用萤火虫和露珠做的灯笼，&lt;br&gt;&lt;br&gt;
+用力喊着：“芒芒！别怕！我在这里！[[跟着我的光回来！-&gt;故事03]]”&lt;br&gt;&lt;br&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="故事03" tags="nobr 第二章：Tiny Light" position="225,600" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+那盏灯笼的光啊，&lt;br&gt;&lt;br&gt;
+在浓雾里看起来那么小，像一粒小小的、温暖的米粒。&lt;br&gt;&lt;br&gt;
+&lt;&lt;linkreplace &quot;但芒芒看到了！&quot;&gt;&gt;但芒芒看到了！&lt;br&gt;&lt;br&gt;
+&lt;&lt;type 30ms&gt;&gt;那就是它回家的灯塔！&lt;br&gt;&lt;br&gt;
+它用尽力气，朝着那一点小小的光飞去。&lt;br&gt;&lt;br&gt;
+雾想拦住它，风想吹散它，可芒芒不管！&lt;br&gt;&lt;br&gt;
+它心里只有一个念头：我的好朋友在等我！我的光要回家！ &lt;br&gt;&lt;br&gt;
+(古古的声音充满了鼓励和力量) &lt;br&gt;&lt;br&gt;
+它飞啊飞，穿过冰冷的雾，翅膀都快要冻僵了…终于！&lt;br&gt;&lt;br&gt;
+它一头撞破了最后一道灰墙！&lt;br&gt;&lt;br&gt;
+温暖的星光、甜甜的空气……&lt;br&gt;&lt;br&gt;
+[[还有守夜小熊大大的、毛茸茸的拥抱一下子把它包围了！-&gt;故事04]]&lt;br&gt;&lt;br&gt;
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="故事04" tags="nobr 第二章：守夜人" position="350,600" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+(声音变得无比温柔，带着如释重负的喜悦)&lt;br&gt;&lt;br&gt;
+ “欢迎回家，芒芒。”&lt;br&gt;&lt;br&gt;
+ 守夜小熊说，“你看，你的光一点都没少，只是刚才被雾藏起来了。”&lt;br&gt;&lt;br&gt;
+  芒芒这才发现，自己身上的光芒，比掉进雾里之前更加温暖，更加明亮了。&lt;br&gt;&lt;br&gt;
+  因为它知道，无论飞得多远，迷失得多深，&lt;br&gt;&lt;br&gt;
+  总有一盏小小的灯，会在最高的地方，为它亮着… &lt;br&gt;&lt;br&gt;
+  (古古的声音渐渐低下去，像一首轻柔的催眠曲的尾声) &lt;br&gt;&lt;br&gt;
+  总有一个守夜人…[[会等着它回家-&gt;可惜夜]]…&lt;br&gt;&lt;br&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="可惜夜" tags="nobr 第二章：夜的角落" position="475,600" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+    你紧锁的眉头不知何时已经舒展开，呼吸变得均匀而绵长。&lt;br&gt;&lt;br&gt;
+	或许你听到了故事的结尾，&lt;br&gt;&lt;br&gt;
+	或许你只是在那份熟悉的、带着旧日气息的温暖和无声的守护中，&lt;br&gt;&lt;br&gt;
+	终于卸下了重负，&lt;br&gt;&lt;br&gt;
+	沉入了许久未曾有过的&lt;&lt;linkreplace &quot;安稳睡眠。&quot;&gt;&gt;安稳睡眠。&lt;br&gt;&lt;br&gt;
+	&lt;&lt;type 30ms&gt;&gt;月光下，守夜人古古和他的小光——&lt;br&gt;&lt;br&gt;
+	在这片被故事和回忆浸润的寂静里，&lt;br&gt;&lt;br&gt;
+	仿佛回到了最初那个被守护的夜晚。&lt;br&gt;&lt;br&gt;
+	[[（第二天）-&gt;绝不会忘记]]
+	&lt;&lt;/type&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="45" name="绝不会忘记" tags="nobr 第二章：第二天" position="600,600" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+	(第二天)&lt;br&gt;&lt;br&gt;
+    睡梦悄然偷走了所有时间——醒来时眯着眼，恍然间模糊了昼夜的分界。&lt;br&gt;&lt;br&gt;
+	哪怕带有灰尘，古古还是被我紧紧抱在怀中……&lt;br&gt;&lt;br&gt;
+	或许是清晨的微风，亦或是古古在轻抚我的头……&lt;br&gt;&lt;br&gt;
+	总之——感觉被安慰到了。&lt;br&gt;&lt;br&gt;
+	古古：“还记得吗？&lt;br&gt;&lt;br&gt;
+	当你觉得整个世界都在下雨的时候，&lt;br&gt;&lt;br&gt;
+	&lt;&lt;linkreplace &quot;我们总有一个地方可以去…&quot;&gt;&gt;我们总有一个地方可以去…&lt;br&gt;&lt;br&gt;
+	&lt;&lt;type 30ms&gt;&gt;那里有永不熄灭的星光，&lt;br&gt;&lt;br&gt;
+	有会唱歌的溪流，还有…&lt;br&gt;&lt;br&gt;
+	永远为你准备好的[[闪电泡芙-&gt;那称之为世界]]。”&lt;br&gt;&lt;br&gt;
+    &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="那称之为世界" tags="nobr 第二章：奶奶的针线篮" position="725,600" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+     古古：“…在很久很久以前，当夜晚第一次拥抱大地时，星星们感到有些孤单。&lt;br&gt;&lt;br&gt;
+	 于是，最古老的那颗星，用一缕月光、一团温暖的云朵，还有一声最甜美的晚安叹息，&lt;br&gt;&lt;br&gt;
+	 缝制了第一个‘守夜人’…”&lt;br&gt;&lt;br&gt;
+	 那是奶奶讲的故事，就在这张床上。&lt;br&gt;&lt;br&gt;
+	 她一边讲，一边把最后一颗纽扣，缝在了古古的胸前…&lt;br&gt;&lt;br&gt;
+	 (我低头看了看古古胸口的旧纽扣) &lt;br&gt;&lt;br&gt;
+	 &lt;&lt;linkreplace &quot;她说——&quot;&gt;&gt;她说——&lt;br&gt;&lt;br&gt;
+	 &lt;&lt;type 30ms&gt;&gt;每个守夜人都有一个要守护的孩子，直到他再也不怕黑夜。&lt;br&gt;&lt;br&gt;
+	 古古：“我还记得你第一次看到我的样子。&lt;br&gt;&lt;br&gt;
+	 那天晚上，雷声好大，你抱着枕头跑进奶奶房间，眼睛红红的。&lt;br&gt;&lt;br&gt;
+	 奶奶笑着把我放进你怀里…&lt;br&gt;&lt;br&gt;
+	 (它的声音充满怀念) &lt;br&gt;&lt;br&gt;
+	 你说：‘它软软的，像棉花糖！他叫什么名字？’&lt;br&gt;&lt;br&gt;
+	 奶奶说：‘它叫古古，是来陪我们小念，赶走噩梦的[[守夜人-&gt;X世界]]。’”&lt;br&gt;&lt;br&gt;
+	 &lt;&lt;/type&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="X世界" tags="nobr 第二章：回忆" position="850,600" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+    古古：“后来，我们一起创造了X世界，对不对？&lt;br&gt;&lt;br&gt;
+	在那里，你是“勇者小念”，我是你的伙伴“守夜人古古”。&lt;br&gt;&lt;br&gt;
+	我们一起打败过“作业怪兽”，赶走过“噩梦乌云”… &lt;br&gt;&lt;br&gt;
+	那里是我们的堡垒，&lt;br&gt;&lt;br&gt;
+	是只属于我们的——&lt;br&gt;&lt;br&gt;
+	永远晴朗的&lt;&lt;linkreplace &quot;秘密花园。&quot;&gt;&gt;秘密花园。&lt;br&gt;&lt;br&gt;
+	&lt;&lt;type 30ms&gt;&gt;
+	那里没有大人的烦恼，没有城市的喧嚣。&lt;br&gt;&lt;br&gt;
+	只有我们俩，勇者小光和守夜人古古，&lt;br&gt;&lt;br&gt;
+	还有我们那些稀奇古怪却无比真实的冒险。&lt;br&gt;&lt;br&gt;
+	它是暴风雨里最坚固的堡垒，是伤心难过时最温暖的港湾，&lt;br&gt;&lt;br&gt;
+	是只属于我们两个的、永远阳光灿烂、星光璀璨的… 秘密花园。&lt;br&gt;&lt;br&gt;
+	在那里，你永远都是那个闪闪发光、无所畏惧的小光。&lt;br&gt;&lt;br&gt;
+	而守护你的光芒，就是我存在的全部意义。&lt;br&gt;&lt;br&gt;
+	它停它抬起头，玻璃眼珠里映着回忆的光芒，&lt;br&gt;&lt;br&gt;
+	用无比真诚、充满期待的目光看着你，提出了那个[[关键的问题-&gt;有你在即可化为水]]。
+	&lt;&lt;/type&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="有你在即可化为水" tags="nobr 第二章：是时候做出抉择了" position="975,600" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+    古古：“你…想回去看看吗？&lt;br&gt;&lt;br&gt;
+	去我们的“X世界”。&lt;br&gt;&lt;br&gt;
+	也许…它能让你的星星重新亮起来？&lt;br&gt;&lt;br&gt;
+	就像那个雷雨夜，就像奶奶故事里的星光…”&lt;br&gt;&lt;br&gt;
+	它的小爪子触碰这我的手，像是在发出无声的邀请&lt;br&gt;&lt;br&gt;
+	[[拒绝-&gt;分支BE]]
+	[[同意-&gt;分支HE]]
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="分支HE" tags="nobr HE路线高潮" position="1100,600" size="100,100">&lt;center&gt;&lt;img src=&quot;./img/x世界.png&quot; width=&quot;60%&quot;&gt;&lt;/center&gt;
+
+&lt;&lt;type 30ms&gt;&gt;
+然而，破旧巷道尽头，树屋早已不在，留下的，只有树桩和工厂。&lt;br&gt;&lt;br&gt;
+
+......&lt;br&gt;&lt;br&gt;
+
+我：“......&lt;&lt;print $XWorldName&gt;&gt;竟然已经，消失了吗？”&lt;br&gt;&lt;br&gt;
+
+&lt;&lt;linkreplace &quot;古古沉默&quot;&gt;&gt;
+    &lt;&lt;type 30ms&gt;&gt;
+        古古没有回答。&lt;br&gt;
+        只是静静地看着我，就像当年我难过时，它在被窝里看我一样。&lt;br&gt;&lt;br&gt;
+
+        一瞬间，压抑太久的情绪突然决堤。&lt;br&gt;&lt;br&gt;
+
+        我跪倒在地，双手捧面，胸口像被撕裂般疼痛，大喊出声：&lt;br&gt;&lt;br&gt;
+
+        我：“我……我真的只是……太害怕了！”&lt;br&gt;
+            “我以为，只要努力、顺从、妥协，就能让你们留下……”&lt;br&gt;&lt;br&gt;
+
+            “可我错了，我一边喊着成长，一边把你们一个个，亲手、亲手埋葬了！”&lt;br&gt;&lt;br&gt;
+
+            我：“赤焰流星……墨比积木……我连你们最后的声音都记不清了……”&lt;br&gt;&lt;br&gt;
+
+            “我甚至……已经开始觉得，那个说‘要当玩具们的老大，让所有小朋友都能开心’的小孩，是个笑话。”&lt;br&gt;&lt;br&gt;
+
+            像个溺水者，用成年人的呼吸法，活在一个根本没有空气的地方。&lt;br&gt;&lt;br&gt;
+
+            我埋下头，声音哑得像锈掉的玩具喇叭：“我没脸回来……我以为自己能拯救&lt;&lt;print $XWorldName&gt;&gt;，可我早就不是那个人了。”&lt;br&gt;&lt;br&gt;
+
+            ——就在[[此刻-&gt;分支HE1]]。&lt;br&gt;&lt;br&gt;
+            &lt;&lt;/type&gt;&gt;
+            &lt;&lt;/linkreplace&gt;&gt;
+            &lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="50" name="分支HE1" tags="nobr HE" position="1225,600" size="100,100">&lt;&lt;type 30ms&gt;&gt;
+    古古伸出双臂，缓缓将我抱住。&lt;br&gt;&lt;br&gt;
+
+    它的动作很轻，却像一次迟到多年的拥抱，将我从寒冷的现实里拉回温热的梦。&lt;br&gt;&lt;br&gt;
+
+    古古：“&lt;&lt;print $XWorldName&gt;&gt;，是你七岁那年，把我抱在怀里，说‘每个玩具都该有自己的名字’的晚上呀。”&lt;br&gt;&lt;br&gt;
+
+    古古拍拍我的背，声音低低的，像是哄一个失眠的孩子入睡：“你从来没有失去我们。”&lt;br&gt;&lt;br&gt;
+
+    古古：“我们在，&lt;&lt;print $XWorldName&gt;&gt;就在。”&lt;br&gt;&lt;br&gt;
+
+    &lt;&lt;print $YouYouQiuName&gt;&gt;（飘来）：“别哭了，笨蛋老大。”&lt;br&gt;&lt;br&gt;
+
+    [[结局-&gt;HECg]]
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="HECg" tags="nobr" position="100,725" size="100,100">&lt;center&gt;&lt;img src=&quot;./img/HD.png&quot; width=&quot;80%&quot;&gt;&lt;/center&gt;
+
+那些关于奶奶、关于雷雨夜、关于柔软拥抱和星光故事的回忆——&lt;br&gt;&lt;br&gt;
+像温热的泉水，一点点浸润了你冰封的心湖。&lt;br&gt;&lt;br&gt;
+你第一次真正地、长久地看向脚边这个毛茸茸的伙伴。&lt;br&gt;&lt;br&gt;
+眼神中的麻木被一种复杂的情感取代——&lt;br&gt;&lt;br&gt;
+有怀念，有酸楚，也有一丝被强压下去的、久违的亮光。&lt;br&gt;&lt;br&gt;
+你的声音沙哑，带着不易察觉的颤抖。&lt;br&gt;&lt;br&gt;
+&lt;center&gt;&lt;h2&gt;——HE：和解——&lt;/h2&gt;&lt;/center&gt;</tw-passagedata><tw-passagedata pid="52" name="分支BE" tags="nobr 终章：拒绝" position="225,725" size="100,100">&lt;center&gt;&lt;img src=&quot;./img/BE.png&quot; width=&quot;80%&quot;&gt;&lt;/center&gt;
+&lt;&lt;type 30ms&gt;&gt;
+    也许，我从未真正属于那个世界。&lt;br&gt;&lt;br&gt;
+    我将那颗燃红的悠悠球，连同那些残留的回忆，缓缓投进了工厂后巷的垃圾桶。&lt;br&gt;&lt;br&gt;
+    &lt;&lt;print $YouYouQiuName&gt;&gt;（微不可闻）：“你……真的，忘了吗？”&lt;br&gt;&lt;br&gt;
+    没有回答。&lt;br&gt;&lt;br&gt;
+    我转身离开，回到那座灰白色的机械牢笼。&lt;br&gt;&lt;br&gt;
+    文件、报表、会议、客户……一切又恢复正常。&lt;br&gt;&lt;br&gt;
+    只是，每当我经过玩具展柜时，手会无意识地一紧，却什么都没抓住。&lt;br&gt;&lt;br&gt;
+    ——在时光尽头，那个不敢拥抱童年的大人，终于失去了曾经握住星星的手。&lt;br&gt;&lt;br&gt;
+    &lt;center&gt;&lt;h2&gt;——BE：失控者——&lt;/h2&gt;&lt;/center&gt;
 &lt;&lt;/type&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
